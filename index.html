@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--
+        Defines the character encoding.
+        UTF-8 supports normal English characters and symbols.
+    -->
     <meta charset="UTF-8">
 
+    <!--
+        Makes the website responsive on phones, tablets and computers.
+    -->
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
 
+    <!--
+        Short description used by search engines.
+    -->
     <meta
         name="description"
-        content="Data Analyst portfolio featuring business analytics, data visualisation, SQL, Python, Power BI and machine learning projects."
+        content="Data Analyst portfolio featuring business analytics, SQL, Python, Power BI and machine learning projects."
     >
 
+    <!--
+        Text displayed on the browser tab.
+        Replace Your Name with your actual professional name.
+    -->
     <title>Tamene Dandena | Data Analyst Portfolio</title>
 
+    <!--
+        Connects this page to the shared CSS file.
+        The CSS file controls colors, spacing and responsive design.
+    -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- =========================
-         Navigation
-    ========================== -->
+    <!-- =====================================================
+         WEBSITE HEADER AND NAVIGATION
+         This navigation appears at the top of the website.
+    ====================================================== -->
     <header class="site-header">
+
         <nav class="navbar container">
 
+            <!--
+                Website logo/name.
+                Clicking it takes the visitor back to the Home page.
+            -->
             <a href="index.html" class="logo">
                 Tamene Dandena
             </a>
 
+            <!--
+                Mobile menu button.
+                It becomes visible on tablets and phones.
+                JavaScript opens and closes the menu.
+            -->
             <button
                 class="menu-button"
                 id="menu-button"
+                type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="nav-links"
             >
                 ☰
             </button>
 
+            <!-- Main website navigation links -->
             <ul class="nav-links" id="nav-links">
+
                 <li>
-                    <a href="index.html" class="active">Home</a>
+                    <!-- The active class highlights the current page -->
+                    <a href="index.html" class="active">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html">
+                        About
+                    </a>
                 </li>
 
                 <li>
-                    <a href="analytics-projects.html">Analytics</a>
+                    <a href="analytics-projects.html">
+                        Analytics
+                    </a>
                 </li>
 
                 <li>
@@ -59,31 +101,44 @@
                 </li>
 
                 <li>
-                    <a href="skills.html">Skills</a>
+                    <a href="skills.html">
+                        Skills
+                    </a>
                 </li>
 
                 <li>
-                    <a href="resume.html">Resume</a>
+                    <a href="resume.html">
+                        Resume
+                    </a>
                 </li>
 
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
                 </li>
+
             </ul>
 
         </nav>
+
     </header>
 
 
+    <!-- =====================================================
+         MAIN PAGE CONTENT
+    ====================================================== -->
     <main>
 
-        <!-- =========================
-             Hero Section
-        ========================== -->
+        <!-- =================================================
+             HERO SECTION
+             Introduces your professional identity immediately.
+        ================================================== -->
         <section class="hero">
 
             <div class="container hero-grid">
 
+                <!-- Left side: professional introduction -->
                 <div class="hero-content">
 
                     <p class="eyebrow">
@@ -104,6 +159,7 @@
                         recommendations.
                     </p>
 
+                    <!-- Main call-to-action buttons -->
                     <div class="hero-buttons">
 
                         <a
@@ -114,18 +170,18 @@
                         </a>
 
                         <a
-                            href="assets/documents/resume.pdf"
+                            href="resume.html"
                             class="button button-secondary"
-                            target="_blank"
-                            rel="noopener noreferrer"
                         >
                             View Resume
                         </a>
 
                     </div>
 
+                    <!-- Professional profile links -->
                     <div class="hero-links">
 
+                        <!-- Replace YOUR-USERNAME -->
                         <a
                             href="https://github.com/tamenee"
                             target="_blank"
@@ -134,18 +190,20 @@
                             GitHub
                         </a>
 
-                        <span>•</span>
+                        <span aria-hidden="true">•</span>
 
+                        <!-- Replace YOUR-LINKEDIN-URL -->
                         <a
-                            href="https://www.linkedin.com/in/tamene-dandena/"
+                            href="https://www.linkedin.com/in/tamene-dandena"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
                             LinkedIn
                         </a>
 
-                        <span>•</span>
+                        <span aria-hidden="true">•</span>
 
+                        <!-- Replace YOUR-EMAIL@example.com -->
                         <a href="mailto:tamenedandena@gmail.com">
                             Email
                         </a>
@@ -155,19 +213,24 @@
                 </div>
 
 
-                <div class="hero-card">
+                <!-- Right side: profile summary card -->
+                <article class="hero-card">
 
-                    <div class="profile-image-wrapper">
-                        <img
-                            src="assets/images/profile-photo.jpg"
-                            alt="Professional photograph of Your Name"
-                            class="profile-image"
-                        >
-                    </div>
+                    <!--
+                        This image already exists in the attached package:
+                        assets/images/profile-photo.png
+                    -->
+                    <img
+                        src="assets/images/profile-photo.png"
+                        alt="Professional profile placeholder"
+                        class="profile-image"
+                    >
 
                     <div class="profile-summary">
 
-                        <h2>Tamene Dandena</h2>
+                        <h2>
+                            Tamene Dandena
+                        </h2>
 
                         <p class="profile-title">
                             Data Analyst
@@ -179,21 +242,22 @@
                         </p>
 
                         <p class="location">
-                            Based in Maryland, USA
+                            Maryland, USA
                         </p>
 
                     </div>
 
-                </div>
+                </article>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             Value Proposition
-        ========================== -->
+        <!-- =================================================
+             SERVICES / SPECIALISATIONS SECTION
+             Explains the three main areas of your portfolio.
+        ================================================== -->
         <section class="section">
 
             <div class="container">
@@ -209,10 +273,10 @@
                     </h2>
 
                     <p>
-                        My projects demonstrate the complete analytics
-                        process: understanding the business problem,
-                        cleaning data, analysing patterns, creating
-                        visualisations and presenting recommendations.
+                        I focus on the complete analytics process:
+                        defining the business question, preparing the
+                        data, analysing patterns and presenting
+                        practical recommendations.
                     </p>
 
                 </div>
@@ -220,15 +284,20 @@
 
                 <div class="service-grid">
 
+                    <!-- Business Analytics card -->
                     <article class="service-card">
 
-                        <div class="card-number">01</div>
+                        <div class="card-number">
+                            01
+                        </div>
 
-                        <h3>Business Analytics</h3>
+                        <h3>
+                            Business Analytics
+                        </h3>
 
                         <p>
-                            I analyse sales, operational, customer and
-                            service data to identify performance trends,
+                            I analyse sales, customer and operational
+                            data to identify trends, risks,
                             inefficiencies and growth opportunities.
                         </p>
 
@@ -239,16 +308,21 @@
                     </article>
 
 
+                    <!-- Data Visualisation card -->
                     <article class="service-card">
 
-                        <div class="card-number">02</div>
+                        <div class="card-number">
+                            02
+                        </div>
 
-                        <h3>Data Visualisation</h3>
+                        <h3>
+                            Data Visualisation
+                        </h3>
 
                         <p>
                             I create clear dashboards that help
-                            stakeholders monitor KPIs, compare results
-                            and make informed decisions.
+                            stakeholders monitor performance, compare
+                            results and understand important findings.
                         </p>
 
                         <p class="tools">
@@ -258,16 +332,21 @@
                     </article>
 
 
+                    <!-- Machine Learning card -->
                     <article class="service-card">
 
-                        <div class="card-number">03</div>
+                        <div class="card-number">
+                            03
+                        </div>
 
-                        <h3>Machine Learning</h3>
+                        <h3>
+                            Machine Learning
+                        </h3>
 
                         <p>
-                            I build and evaluate predictive models for
-                            tasks such as customer churn, forecasting,
-                            classification and pattern recognition.
+                            I build predictive models for customer
+                            churn, classification, forecasting and
+                            natural-language-processing problems.
                         </p>
 
                         <p class="tools">
@@ -283,9 +362,10 @@
         </section>
 
 
-        <!-- =========================
-             Featured Projects
-        ========================== -->
+        <!-- =================================================
+             FEATURED PROJECTS SECTION
+             Shows the projects recruiters should see first.
+        ================================================== -->
         <section class="section section-light">
 
             <div class="container">
@@ -302,8 +382,9 @@
 
                     <p>
                         These projects demonstrate how I use data to
-                        answer business questions and communicate
-                        actionable findings.
+                        investigate business questions, create
+                        dashboards and communicate actionable
+                        findings.
                     </p>
 
                 </div>
@@ -311,11 +392,17 @@
 
                 <div class="project-grid">
 
-                    <!-- Project 1 -->
+                    <!-- =====================================
+                         Project 1: Sales Dashboard
+                    ====================================== -->
                     <article class="project-card">
 
                         <a href="projects/sales-dashboard.html">
 
+                            <!--
+                                Image location:
+                                assets/images/sales-dashboard.png
+                            -->
                             <img
                                 src="assets/images/sales-dashboard.png"
                                 alt="Sales performance dashboard preview"
@@ -335,11 +422,12 @@
                             </h3>
 
                             <p>
-                                Analysed sales, profit, product and
-                                regional performance to identify revenue
-                                trends and low-margin business areas.
+                                Analysed revenue, profit, products,
+                                customer segments and regional
+                                performance.
                             </p>
 
+                            <!-- Technologies used in the project -->
                             <div class="project-tags">
                                 <span>SQL</span>
                                 <span>Power BI</span>
@@ -358,11 +446,17 @@
                     </article>
 
 
-                    <!-- Project 2 -->
+                    <!-- =====================================
+                         Project 2: Customer Analysis
+                    ====================================== -->
                     <article class="project-card">
 
-                        <a href="projects/customer-analysis.html">
+                        <a href="analytics-projects.html">
 
+                            <!--
+                                Image location:
+                                assets/images/customer-analysis.png
+                            -->
                             <img
                                 src="assets/images/customer-analysis.png"
                                 alt="Customer behaviour analysis preview"
@@ -382,10 +476,9 @@
                             </h3>
 
                             <p>
-                                Examined purchasing patterns, customer
-                                segments and retention indicators to
-                                identify opportunities for improving
-                                engagement.
+                                Analysed customer segments, purchasing
+                                patterns, repeat purchases and
+                                retention indicators.
                             </p>
 
                             <div class="project-tags">
@@ -395,10 +488,10 @@
                             </div>
 
                             <a
-                                href="projects/customer-analysis.html"
+                                href="analytics-projects.html"
                                 class="project-link"
                             >
-                                View case study →
+                                View project →
                             </a>
 
                         </div>
@@ -406,11 +499,17 @@
                     </article>
 
 
-                    <!-- Project 3 -->
+                    <!-- =====================================
+                         Project 3: Help-Desk Analysis
+                    ====================================== -->
                     <article class="project-card">
 
-                        <a href="projects/helpdesk-analysis.html">
+                        <a href="analytics-projects.html">
 
+                            <!--
+                                Image location:
+                                assets/images/helpdesk-dashboard.png
+                            -->
                             <img
                                 src="assets/images/helpdesk-dashboard.png"
                                 alt="IT help-desk analytics dashboard preview"
@@ -430,9 +529,9 @@
                             </h3>
 
                             <p>
-                                Analysed ticket volume, SLA performance,
-                                resolution time and recurring incidents
-                                to identify service-improvement areas.
+                                Analysed ticket volume, resolution
+                                times, SLA performance and recurring
+                                service problems.
                             </p>
 
                             <div class="project-tags">
@@ -442,10 +541,10 @@
                             </div>
 
                             <a
-                                href="projects/helpdesk-analysis.html"
+                                href="analytics-projects.html"
                                 class="project-link"
                             >
-                                View case study →
+                                View project →
                             </a>
 
                         </div>
@@ -455,6 +554,7 @@
                 </div>
 
 
+                <!-- Link to the complete Analytics page -->
                 <div class="section-action">
 
                     <a
@@ -471,9 +571,11 @@
         </section>
 
 
-        <!-- =========================
-             Machine Learning Preview
-        ========================== -->
+        <!-- =================================================
+             MACHINE LEARNING PREVIEW
+             Shows advanced ability without changing the main
+             Data Analyst positioning.
+        ================================================== -->
         <section class="section">
 
             <div class="container feature-layout">
@@ -490,17 +592,17 @@
 
                     <p>
                         In addition to descriptive and diagnostic
-                        analytics, I use machine-learning techniques to
-                        predict outcomes and support forward-looking
+                        analytics, I use machine-learning techniques
+                        to predict outcomes and support forward-looking
                         business decisions.
                     </p>
 
                     <ul class="feature-list">
                         <li>Customer churn prediction</li>
-                        <li>Classification and regression modelling</li>
+                        <li>Classification and regression</li>
+                        <li>Feature engineering</li>
+                        <li>Model comparison and evaluation</li>
                         <li>Natural language processing</li>
-                        <li>Model evaluation and comparison</li>
-                        <li>Feature engineering and data preparation</li>
                     </ul>
 
                     <a
@@ -513,8 +615,13 @@
                 </div>
 
 
+                <!-- Featured machine-learning project -->
                 <article class="featured-model-card">
 
+                    <!--
+                        Image location:
+                        assets/images/churn-model.png
+                    -->
                     <img
                         src="assets/images/churn-model.png"
                         alt="Customer churn prediction project preview"
@@ -532,9 +639,10 @@
                         </h3>
 
                         <p>
-                            Built and compared classification models to
-                            identify customers at risk of leaving and
-                            explored the factors associated with churn.
+                            Built and compared classification models
+                            to identify customers at risk of leaving
+                            and investigated factors associated with
+                            churn.
                         </p>
 
                         <div class="project-tags">
@@ -552,9 +660,9 @@
         </section>
 
 
-        <!-- =========================
-             Skills Snapshot
-        ========================== -->
+        <!-- =================================================
+             TECHNICAL SKILLS SUMMARY
+        ================================================== -->
         <section class="section section-dark">
 
             <div class="container">
@@ -574,53 +682,63 @@
 
                 <div class="skills-grid">
 
-                    <div class="skill-group">
+                    <article class="skill-group">
 
-                        <h3>Data Analysis</h3>
+                        <h3>
+                            Data Analysis
+                        </h3>
 
                         <p>
                             SQL, Excel, pandas, NumPy, data cleaning,
-                            exploratory analysis and statistical analysis
+                            exploratory analysis and statistical
+                            analysis.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="skill-group">
+                    <article class="skill-group">
 
-                        <h3>Visualisation</h3>
+                        <h3>
+                            Visualisation
+                        </h3>
 
                         <p>
                             Power BI, Tableau, matplotlib, dashboard
-                            design, KPI reporting and data storytelling
+                            design, KPI reporting and data
+                            storytelling.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="skill-group">
+                    <article class="skill-group">
 
-                        <h3>Machine Learning</h3>
+                        <h3>
+                            Machine Learning
+                        </h3>
 
                         <p>
                             scikit-learn, TensorFlow, classification,
-                            regression, NLP, model evaluation and feature
-                            engineering
+                            regression, NLP, model evaluation and
+                            feature engineering.
                         </p>
 
-                    </div>
+                    </article>
 
 
-                    <div class="skill-group">
+                    <article class="skill-group">
 
-                        <h3>Development</h3>
+                        <h3>
+                            Development
+                        </h3>
 
                         <p>
-                            Python, Git, GitHub, Jupyter Notebook, VS Code,
-                            HTML, CSS and basic cloud technologies
+                            Python, Git, GitHub, Jupyter Notebook,
+                            VS Code, HTML, CSS and cloud fundamentals.
                         </p>
 
-                    </div>
+                    </article>
 
                 </div>
 
@@ -629,9 +747,10 @@
         </section>
 
 
-        <!-- =========================
-             Call to Action
-        ========================== -->
+        <!-- =================================================
+             CONTACT CALL-TO-ACTION
+             Encourages recruiters to contact you.
+        ================================================== -->
         <section class="section contact-cta">
 
             <div class="container contact-cta-content">
@@ -648,9 +767,10 @@
                     </h2>
 
                     <p>
-                        I am interested in entry-level data analyst,
-                        business intelligence, reporting and analytics
-                        opportunities.
+                        I am interested in entry-level Data Analyst,
+                        Business Intelligence, Reporting and
+                        Operations Analytics opportunities in the
+                        United States.
                     </p>
 
                 </div>
@@ -669,9 +789,9 @@
     </main>
 
 
-    <!-- =========================
-         Footer
-    ========================== -->
+    <!-- =====================================================
+         WEBSITE FOOTER
+    ====================================================== -->
     <footer class="site-footer">
 
         <div class="container footer-content">
@@ -692,7 +812,7 @@
                 </a>
 
                 <a
-                    href="https://www.linkedin.com/in/tamene-dandena/"
+                    href="https://www.linkedin.com/in/tamene-dandena"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -709,7 +829,13 @@
 
     </footer>
 
+
+    <!--
+        Loads the shared JavaScript file.
+        It should remain immediately before the closing body tag.
+    -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
