@@ -856,10 +856,422 @@ textarea {
 }
 
 /* ==================================
+   Analytics Page Hero
+================================== */
+
+.analytics-hero {
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(37, 99, 235, 0.18),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+}
+
+.hero-stat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+.hero-stat {
+    min-width: 180px;
+    padding: 20px 24px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow-small);
+}
+
+.hero-stat strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+.hero-stat span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* ==================================
+   Analytics Introduction
+================================== */
+
+.analytics-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 72px;
+    align-items: start;
+}
+
+.analytics-intro-grid h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.analytics-intro-grid > div:first-child p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.analytics-process-card {
+    padding: 32px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+.analytics-process-card h3 {
+    margin-bottom: 24px;
+    color: var(--heading);
+    font-size: 1.35rem;
+}
+
+.analytics-process-list {
+    display: grid;
+    gap: 22px;
+    list-style: none;
+}
+
+.analytics-process-list li {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 16px;
+}
+
+.analytics-process-list li > span {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 10px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.analytics-process-list strong {
+    color: var(--heading);
+}
+
+.analytics-process-list p {
+    margin-top: 4px;
+    font-size: 0.92rem;
+}
+
+
+/* ==================================
+   Featured Analytics Project
+================================== */
+
+.featured-project {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow-large);
+}
+
+.featured-project-image {
+    min-height: 100%;
+    background: #e2e8f0;
+}
+
+.featured-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-project-content {
+    padding: 44px;
+}
+
+.featured-project-content h3 {
+    margin: 10px 0 18px;
+    color: var(--heading);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.featured-project-content > p:not(.project-category) {
+    margin-bottom: 16px;
+}
+
+.project-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+}
+
+.project-detail-grid > div {
+    padding: 16px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.project-detail-grid span {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text);
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project-detail-grid strong {
+    color: var(--heading);
+    font-size: 0.92rem;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+
+/* ==================================
+   Analytics Project Cards
+================================== */
+
+.analytics-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.analytics-project-card {
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.analytics-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-large);
+}
+
+.analytics-project-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.analytics-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.analytics-project-placeholder {
+    display: flex;
+    min-height: 280px;
+    align-items: flex-end;
+    padding: 34px;
+    background:
+        linear-gradient(
+            145deg,
+            #eff6ff,
+            #dbeafe
+        );
+}
+
+.analytics-project-placeholder span {
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.analytics-project-placeholder h3 {
+    max-width: 400px;
+    margin-top: 10px;
+    color: var(--heading);
+    font-size: 2rem;
+    line-height: 1.15;
+}
+
+.analytics-project-body {
+    padding: 30px;
+}
+
+.project-card-header {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-status {
+    padding: 5px 9px;
+    background: #f1f5f9;
+    border-radius: 999px;
+    color: var(--text);
+    font-size: 0.72rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.analytics-project-body h3 {
+    margin: 10px 0 14px;
+    color: var(--heading);
+    font-size: 1.45rem;
+    line-height: 1.3;
+}
+
+.project-question {
+    margin-top: 22px;
+    padding: 18px;
+    background: var(--background-light);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 10px 10px 0;
+}
+
+.project-question span {
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.project-question p {
+    margin-top: 6px;
+    color: var(--heading);
+    font-size: 0.94rem;
+    font-weight: 600;
+}
+
+.project-card-actions {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.github-link {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.github-link:hover {
+    color: var(--primary);
+}
+
+.muted-link {
+    color: #94a3b8;
+    cursor: default;
+}
+
+
+/* ==================================
+   Analytics Tools
+================================== */
+
+.analytics-tool-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.analytics-tool-card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--border-radius);
+}
+
+.tool-number {
+    display: block;
+    margin-bottom: 24px;
+    color: #60a5fa;
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.analytics-tool-card h3 {
+    margin-bottom: 12px;
+    color: var(--white);
+    font-size: 1.35rem;
+}
+
+.analytics-tool-card p {
+    color: var(--light-text);
+}
+
+
+/* ==================================
+   Project Standards
+================================== */
+
+.project-standard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-standard-item {
+    padding: 28px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+.project-standard-item strong {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--heading);
+    font-size: 1.05rem;
+}
+/* ==================================
    Tablet Responsive Design
 ================================== */
 
 @media (max-width: 960px) {
+
+.analytics-intro-grid,
+.featured-project {
+    grid-template-columns: 1fr;
+}
+
+.analytics-tool-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-standard-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.featured-project-image {
+    max-height: 520px;
+}
+
+.featured-project-image img {
+    object-fit: cover;
+}
 
     .hero-grid,
     .feature-layout {
@@ -934,6 +1346,48 @@ textarea {
 ================================== */
 
 @media (max-width: 640px) {
+
+   .hero-stat-grid {
+    flex-direction: column;
+}
+
+.hero-stat {
+    width: 100%;
+}
+
+.analytics-project-grid,
+.analytics-tool-grid,
+.project-standard-grid {
+    grid-template-columns: 1fr;
+}
+
+.featured-project-content,
+.analytics-project-body {
+    padding: 24px;
+}
+
+.project-detail-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-actions,
+.project-card-actions {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.project-card-actions .project-link,
+.project-card-actions .github-link {
+    text-align: left;
+}
+
+.analytics-project-placeholder {
+    min-height: 220px;
+}
+
+.analytics-project-placeholder h3 {
+    font-size: 1.7rem;
+}
 
     .section {
         padding: 72px 0;
