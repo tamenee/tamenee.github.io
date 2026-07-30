@@ -1,1 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <!--
+        Defines the character encoding used by the page.
+        UTF-8 supports standard English characters and symbols.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Makes the page responsive on desktop computers,
+        tablets and mobile phones.
+    -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!--
+        Provides a short summary for search engines.
+    -->
+    <meta
+        name="description"
+        content="Sales Performance Dashboard case study using SQL, Excel and Power BI to analyse revenue, profit, products and regional performance."
+    >
+
+    <!-- Text displayed in the browser tab -->
+    <title>
+        Sales Performance Dashboard | Data Analyst Portfolio
+    </title>
+
+    <!--
+        Connects this project page to the shared stylesheet.
+
+        ../ moves one level up from the projects folder
+        to the main website folder.
+    -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         WEBSITE HEADER
+         This uses the same navigation as the other pages.
+    ====================================================== -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <!--
+                Clicking the logo returns the visitor to the Home page.
+                ../ is required because this file is inside projects/.
+            -->
+            <a href="../index.html" class="logo">
+                Tamene Dandena
+            </a>
+
+            <!--
+                Mobile navigation button.
+                JavaScript controls whether the menu is open or closed.
+            -->
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <!-- Main navigation -->
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="../analytics-projects.html"
+                        class="active"
+                    >
+                        Analytics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../machine-learning.html">
+                        Machine Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../resume.html">
+                        Résumé
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN PAGE CONTENT
+    ====================================================== -->
+    <main>
+
+        <!-- =================================================
+             PROJECT HERO SECTION
+             Introduces the project and its purpose.
+        ================================================== -->
+        <section class="project-case-hero">
+
+            <div class="container">
+
+                <!-- Breadcrumb navigation -->
+                <nav
+                    class="breadcrumb"
+                    aria-label="Breadcrumb"
+                >
+                    <a href="../index.html">
+                        Home
+                    </a>
+
+                    <span aria-hidden="true">
+                        /
+                    </span>
+
+                    <a href="../analytics-projects.html">
+                        Analytics Projects
+                    </a>
+
+                    <span aria-hidden="true">
+                        /
+                    </span>
+
+                    <span>
+                        Sales Dashboard
+                    </span>
+                </nav>
+
+
+                <div class="project-case-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            BUSINESS INTELLIGENCE CASE STUDY
+                        </p>
+
+                        <h1>
+                            Sales Performance Dashboard
+                        </h1>
+
+                        <p class="project-case-introduction">
+                            An end-to-end business analytics project
+                            using SQL, Excel and Power BI to evaluate
+                            revenue, profitability, product performance,
+                            customer segments and regional sales trends.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Project status and category -->
+                    <div class="project-case-badge">
+
+                        <span>
+                            Portfolio Project
+                        </span>
+
+                        <strong>
+                            Business Analytics
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project technology tags -->
+                <div class="project-case-tags">
+
+                    <span>SQL</span>
+                    <span>Excel</span>
+                    <span>Power BI</span>
+                    <span>Data Cleaning</span>
+                    <span>Dashboard Design</span>
+                    <span>Business Intelligence</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MAIN PROJECT IMAGE
+             Uses the existing dashboard placeholder image.
+        ================================================== -->
+        <section class="project-image-section">
+
+            <div class="container">
+
+                <figure class="project-main-figure">
+
+                    <!--
+                        The image is stored one folder above this page:
+                        ../assets/images/sales-dashboard.png
+                    -->
+                    <img
+                        src="../assets/images/sales-dashboard.png"
+                        alt="Sales Performance Dashboard showing revenue, profit and regional sales metrics"
+                        class="project-main-image"
+                    >
+
+                    <figcaption>
+                        Dashboard preview. This placeholder can later
+                        be replaced with a screenshot of the completed
+                        Power BI report.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECT SUMMARY
+             Provides a quick overview for recruiters.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container project-summary-grid">
+
+                <!-- Main overview -->
+                <div class="project-summary-content">
+
+                    <p class="section-label">
+                        PROJECT OVERVIEW
+                    </p>
+
+                    <h2>
+                        Understanding what drives revenue and profit
+                    </h2>
+
+                    <p>
+                        The purpose of this project is to help business
+                        leaders understand overall sales performance
+                        and identify areas requiring further attention.
+                    </p>
+
+                    <p>
+                        The analysis examines revenue, profit, product
+                        categories, customer segments, regional
+                        performance and monthly trends. It is designed
+                        to answer both high-level management questions
+                        and detailed operational questions.
+                    </p>
+
+                    <p>
+                        The final output is an interactive Power BI
+                        dashboard supported by SQL analysis and a
+                        documented data-cleaning process.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick project information card -->
+                <aside class="project-facts-card">
+
+                    <h2>
+                        Project details
+                    </h2>
+
+                    <dl class="project-facts-list">
+
+                        <div>
+                            <dt>
+                                Project type
+                            </dt>
+
+                            <dd>
+                                Business intelligence
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>
+                                Business area
+                            </dt>
+
+                            <dd>
+                                Sales and profitability
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>
+                                Main tools
+                            </dt>
+
+                            <dd>
+                                SQL, Excel and Power BI
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>
+                                Final output
+                            </dt>
+
+                            <dd>
+                                Interactive dashboard
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>
+                                Status
+                            </dt>
+
+                            <dd>
+                                In development
+                            </dd>
+                        </div>
+
+                    </dl>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             BUSINESS PROBLEM
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container project-two-column">
+
+                <div>
+
+                    <p class="section-label">
+                        BUSINESS PROBLEM
+                    </p>
+
+                    <h2>
+                        Management needs a clearer view of performance
+                    </h2>
+
+                    <p>
+                        The organisation records sales transactions,
+                        but raw transaction data does not immediately
+                        explain which products, customers or regions
+                        are performing well.
+                    </p>
+
+                    <p>
+                        Management needs a consolidated view that
+                        distinguishes revenue growth from actual
+                        profitability and identifies where attention
+                        should be focused.
+                    </p>
+
+                </div>
+
+
+                <div class="business-problem-card">
+
+                    <h3>
+                        Main business challenge
+                    </h3>
+
+                    <p>
+                        High sales revenue does not always produce high
+                        profit. Discounts, product costs and regional
+                        differences can create weak margins even when
+                        sales appear strong.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             BUSINESS QUESTIONS
+        ================================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        BUSINESS QUESTIONS
+                    </p>
+
+                    <h2>
+                        Questions the analysis is designed to answer
+                    </h2>
+
+                    <p>
+                        These questions guide the SQL analysis,
+                        dashboard measures and final recommendations.
+                    </p>
+
+                </div>
+
+
+                <div class="question-grid">
+
+                    <article class="question-card">
+
+                        <span class="question-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Revenue performance
+                        </h3>
+
+                        <p>
+                            How is total revenue changing over time,
+                            and which months show the strongest or
+                            weakest performance?
+                        </p>
+
+                    </article>
+
+
+                    <article class="question-card">
+
+                        <span class="question-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Profitability
+                        </h3>
+
+                        <p>
+                            Which products and categories generate
+                            strong revenue but low or negative profit?
+                        </p>
+
+                    </article>
+
+
+                    <article class="question-card">
+
+                        <span class="question-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Regional performance
+                        </h3>
+
+                        <p>
+                            Which regions produce the highest sales,
+                            profit and average order value?
+                        </p>
+
+                    </article>
+
+
+                    <article class="question-card">
+
+                        <span class="question-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Customer segments
+                        </h3>
+
+                        <p>
+                            Which customer groups contribute the most
+                            revenue and profit to the business?
+                        </p>
+
+                    </article>
+
+
+                    <article class="question-card">
+
+                        <span class="question-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Discount impact
+                        </h3>
+
+                        <p>
+                            How do discounts affect profit margins
+                            across products and categories?
+                        </p>
+
+                    </article>
+
+
+                    <article class="question-card">
+
+                        <span class="question-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Product performance
+                        </h3>
+
+                        <p>
+                            Which individual products should receive
+                            further investment, review or corrective
+                            action?
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DATASET DESCRIPTION
+        ================================================== -->
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-light">
+
+                    <p class="section-label">
+                        DATASET
+                    </p>
+
+                    <h2>
+                        Structure of the sales data
+                    </h2>
+
+                    <p>
+                        The project uses transaction-level data
+                        containing order, customer, product, sales,
+                        cost and regional information.
+                    </p>
+
+                </div>
+
+
+                <div class="dataset-layout">
+
+                    <!-- Dataset summary -->
+                    <div class="dataset-description">
+
+                        <h3>
+                            Example dataset fields
+                        </h3>
+
+                        <p>
+                            The exact dataset can be replaced later with
+                            a public sales dataset such as a retail,
+                            e-commerce or Superstore-style dataset.
+                        </p>
+
+                        <p>
+                            Do not claim a final number of records,
+                            time period or business result until your
+                            actual analysis has been completed.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Example columns -->
+                    <div class="data-field-grid">
+
+                        <div class="data-field">
+                            <strong>Order ID</strong>
+                            <span>Unique transaction identifier</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Order Date</strong>
+                            <span>Date the order was placed</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Customer</strong>
+                            <span>Customer or account information</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Segment</strong>
+                            <span>Customer classification</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Region</strong>
+                            <span>Geographic sales region</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Product</strong>
+                            <span>Product name and category</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Sales</strong>
+                            <span>Revenue generated by the order</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Profit</strong>
+                            <span>Profit or loss from the order</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Quantity</strong>
+                            <span>Number of units sold</span>
+                        </div>
+
+                        <div class="data-field">
+                            <strong>Discount</strong>
+                            <span>Discount applied to the order</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DATA CLEANING PROCESS
+        ================================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        DATA PREPARATION
+                    </p>
+
+                    <h2>
+                        Preparing reliable data for analysis
+                    </h2>
+
+                    <p>
+                        Before creating visualisations, the data should
+                        be cleaned, validated and documented.
+                    </p>
+
+                </div>
+
+
+                <div class="preparation-grid">
+
+                    <article class="preparation-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Remove duplicates
+                        </h3>
+
+                        <p>
+                            Check for repeated order lines and confirm
+                            whether duplicates represent errors or
+                            legitimate multiple-item purchases.
+                        </p>
+
+                    </article>
+
+
+                    <article class="preparation-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Validate missing values
+                        </h3>
+
+                        <p>
+                            Identify missing customer, product, region,
+                            sales and profit values and document how
+                            each issue is handled.
+                        </p>
+
+                    </article>
+
+
+                    <article class="preparation-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Standardise dates
+                        </h3>
+
+                        <p>
+                            Convert date fields into a consistent format
+                            and create year, quarter and month
+                            attributes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="preparation-card">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Review numeric values
+                        </h3>
+
+                        <p>
+                            Confirm that sales, quantity, discount and
+                            profit columns use valid numeric data
+                            types.
+                        </p>
+
+                    </article>
+
+
+                    <article class="preparation-card">
+
+                        <span>
+                            05
+                        </span>
+
+                        <h3>
+                            Standardise categories
+                        </h3>
+
+                        <p>
+                            Correct inconsistent spelling,
+                            capitalisation and naming in product,
+                            segment and regional fields.
+                        </p>
+
+                    </article>
+
+
+                    <article class="preparation-card">
+
+                        <span>
+                            06
+                        </span>
+
+                        <h3>
+                            Create calculated fields
+                        </h3>
+
+                        <p>
+                            Add profit margin, average order value,
+                            monthly growth and other required measures.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SQL ANALYSIS SECTION
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        SQL ANALYSIS
+                    </p>
+
+                    <h2>
+                        Example queries used in the project
+                    </h2>
+
+                    <p>
+                        These example queries demonstrate the type of
+                        analysis that will support the dashboard.
+                        Table and column names can be adjusted to match
+                        the final dataset.
+                    </p>
+
+                </div>
+
+
+                <!-- SQL example 1 -->
+                <article class="code-example">
+
+                    <div class="code-example-heading">
+
+                        <div>
+                            <span>
+                                SQL QUERY 01
+                            </span>
+
+                            <h3>
+                                Monthly sales and profit
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <pre><code>-- Group sales and profit by calendar month.
+-- DATE_TRUNC may vary depending on the SQL database used.
+
+SELECT
+    DATE_TRUNC('month', order_date) AS sales_month,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    ROUND(
+        SUM(profit) / NULLIF(SUM(sales), 0) * 100,
+        2
+    ) AS profit_margin_percentage
+FROM sales_orders
+GROUP BY
+    DATE_TRUNC('month', order_date)
+ORDER BY
+    sales_month;</code></pre>
+
+                </article>
+
+
+                <!-- SQL example 2 -->
+                <article class="code-example">
+
+                    <div class="code-example-heading">
+
+                        <div>
+                            <span>
+                                SQL QUERY 02
+                            </span>
+
+                            <h3>
+                                Product profitability
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <pre><code>-- Identify products with high revenue but weak profit.
+
+SELECT
+    product_name,
+    category,
+    SUM(sales) AS total_sales,
+    SUM(profit) AS total_profit,
+    ROUND(
+        SUM(profit) / NULLIF(SUM(sales), 0) * 100,
+        2
+    ) AS profit_margin_percentage
+FROM sales_orders
+GROUP BY
+    product_name,
+    category
+ORDER BY
+    total_sales DESC;</code></pre>
+
+                </article>
+
+
+                <!-- SQL example 3 -->
+                <article class="code-example">
+
+                    <div class="code-example-heading">
+
+                        <div>
+                            <span>
+                                SQL QUERY 03
+                            </span>
+
+                            <h3>
+                                Regional ranking
+                            </h3>
+                        </div>
+
+                    </div>
+
+                    <pre><code>-- Rank regions according to total profit.
+
+WITH regional_performance AS (
+    SELECT
+        region,
+        SUM(sales) AS total_sales,
+        SUM(profit) AS total_profit
+    FROM sales_orders
+    GROUP BY
+        region
+)
+
+SELECT
+    region,
+    total_sales,
+    total_profit,
+    RANK() OVER (
+        ORDER BY total_profit DESC
+    ) AS profit_rank
+FROM regional_performance
+ORDER BY
+    profit_rank;</code></pre>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             KPI SECTION
+        ================================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        DASHBOARD KPIs
+                    </p>
+
+                    <h2>
+                        Key performance indicators
+                    </h2>
+
+                    <p>
+                        These measures give management a concise view
+                        of the organisation's performance.
+                    </p>
+
+                </div>
+
+
+                <div class="kpi-grid">
+
+                    <article class="kpi-card">
+
+                        <span>
+                            KPI 01
+                        </span>
+
+                        <h3>
+                            Total Revenue
+                        </h3>
+
+                        <p>
+                            Total monetary value of completed sales.
+                        </p>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <span>
+                            KPI 02
+                        </span>
+
+                        <h3>
+                            Total Profit
+                        </h3>
+
+                        <p>
+                            Total earnings after recorded product or
+                            transaction costs.
+                        </p>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <span>
+                            KPI 03
+                        </span>
+
+                        <h3>
+                            Profit Margin
+                        </h3>
+
+                        <p>
+                            Profit expressed as a percentage of total
+                            revenue.
+                        </p>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <span>
+                            KPI 04
+                        </span>
+
+                        <h3>
+                            Average Order Value
+                        </h3>
+
+                        <p>
+                            Average revenue generated by each order.
+                        </p>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <span>
+                            KPI 05
+                        </span>
+
+                        <h3>
+                            Monthly Growth
+                        </h3>
+
+                        <p>
+                            Percentage change in revenue compared with
+                            the previous month.
+                        </p>
+
+                    </article>
+
+
+                    <article class="kpi-card">
+
+                        <span>
+                            KPI 06
+                        </span>
+
+                        <h3>
+                            Orders and Quantity
+                        </h3>
+
+                        <p>
+                            Number of orders and total product units
+                            sold.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DASHBOARD DESIGN
+        ================================================== -->
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-light">
+
+                    <p class="section-label">
+                        DASHBOARD DESIGN
+                    </p>
+
+                    <h2>
+                        Proposed Power BI report structure
+                    </h2>
+
+                    <p>
+                        The report is designed to move from executive
+                        overview to detailed product and regional
+                        analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-page-grid">
+
+                    <article class="dashboard-page-card">
+
+                        <span>
+                            PAGE 01
+                        </span>
+
+                        <h3>
+                            Executive Overview
+                        </h3>
+
+                        <p>
+                            Total revenue, profit, margin, monthly trend
+                            and high-level regional performance.
+                        </p>
+
+                    </article>
+
+
+                    <article class="dashboard-page-card">
+
+                        <span>
+                            PAGE 02
+                        </span>
+
+                        <h3>
+                            Product Analysis
+                        </h3>
+
+                        <p>
+                            Product and category revenue, profit,
+                            margins, discounts and underperforming
+                            items.
+                        </p>
+
+                    </article>
+
+
+                    <article class="dashboard-page-card">
+
+                        <span>
+                            PAGE 03
+                        </span>
+
+                        <h3>
+                            Regional Analysis
+                        </h3>
+
+                        <p>
+                            Sales and profitability comparisons across
+                            regions, states or territories.
+                        </p>
+
+                    </article>
+
+
+                    <article class="dashboard-page-card">
+
+                        <span>
+                            PAGE 04
+                        </span>
+
+                        <h3>
+                            Customer Analysis
+                        </h3>
+
+                        <p>
+                            Segment performance, customer value,
+                            purchasing behaviour and order patterns.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FINDINGS SECTION
+             Use placeholders until analysis is complete.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        PRELIMINARY FINDINGS
+                    </p>
+
+                    <h2>
+                        Findings to confirm through the analysis
+                    </h2>
+
+                    <p>
+                        Replace these statements with measured results
+                        after completing the SQL analysis and Power BI
+                        dashboard. Do not invent percentages or
+                        performance figures.
+                    </p>
+
+                </div>
+
+
+                <div class="finding-grid">
+
+                    <article class="finding-card">
+
+                        <span>
+                            Finding 01
+                        </span>
+
+                        <h3>
+                            Revenue concentration
+                        </h3>
+
+                        <p>
+                            A limited number of products or categories
+                            may account for a substantial share of
+                            revenue.
+                        </p>
+
+                    </article>
+
+
+                    <article class="finding-card">
+
+                        <span>
+                            Finding 02
+                        </span>
+
+                        <h3>
+                            Margin differences
+                        </h3>
+
+                        <p>
+                            Some high-revenue products may produce weak
+                            profit margins due to discounting or cost.
+                        </p>
+
+                    </article>
+
+
+                    <article class="finding-card">
+
+                        <span>
+                            Finding 03
+                        </span>
+
+                        <h3>
+                            Regional variation
+                        </h3>
+
+                        <p>
+                            Regions with similar revenue may show
+                            noticeably different profitability.
+                        </p>
+
+                    </article>
+
+
+                    <article class="finding-card">
+
+                        <span>
+                            Finding 04
+                        </span>
+
+                        <h3>
+                            Seasonal patterns
+                        </h3>
+
+                        <p>
+                            Sales may increase or decline during
+                            specific months or quarters.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RECOMMENDATIONS
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container project-two-column">
+
+                <div>
+
+                    <p class="section-label">
+                        RECOMMENDATIONS
+                    </p>
+
+                    <h2>
+                        Turning analytical findings into action
+                    </h2>
+
+                    <p>
+                        Final recommendations should be based on the
+                        measured results. The examples below show the
+                        expected style of business recommendations.
+                    </p>
+
+                </div>
+
+
+                <div class="recommendation-list">
+
+                    <article>
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+                            <h3>
+                                Review low-margin products
+                            </h3>
+
+                            <p>
+                                Investigate product costs, discount
+                                levels and pricing for products that
+                                generate strong sales but weak profit.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+                            <h3>
+                                Protect high-value categories
+                            </h3>
+
+                            <p>
+                                Prioritise inventory, marketing and
+                                customer retention around consistently
+                                profitable categories.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+                            <h3>
+                                Investigate regional differences
+                            </h3>
+
+                            <p>
+                                Compare shipping, discounting, product
+                                mix and operational costs across weak
+                                and strong regions.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>
+                            04
+                        </span>
+
+                        <div>
+                            <h3>
+                                Plan around seasonality
+                            </h3>
+
+                            <p>
+                                Adjust inventory and promotional
+                                planning before consistently strong or
+                                weak sales periods.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             REPOSITORY STRUCTURE
+        ================================================== -->
+        <section class="section">
+
+            <div class="container project-two-column">
+
+                <div>
+
+                    <p class="section-label">
+                        GITHUB REPOSITORY
+                    </p>
+
+                    <h2>
+                        Recommended project file structure
+                    </h2>
+
+                    <p>
+                        Keep the analytical work in a separate GitHub
+                        repository rather than placing notebooks and
+                        data inside the website repository.
+                    </p>
+
+                </div>
+
+
+                <div class="repository-structure">
+
+                    <pre><code>sales-performance-analysis/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── sql/
+│   ├── data-cleaning.sql
+│   ├── sales-analysis.sql
+│   └── kpi-queries.sql
+│
+├── notebooks/
+│   └── exploratory-analysis.ipynb
+│
+├── dashboard/
+│   └── sales-dashboard.pbix
+│
+├── images/
+│   ├── dashboard-overview.png
+│   └── dashboard-details.png
+│
+└── reports/
+    └── executive-summary.pdf</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECT LINKS
+        ================================================== -->
+        <section class="section project-link-section">
+
+            <div class="container project-link-panel">
+
+                <div>
+
+                    <p class="section-label">
+                        PROJECT RESOURCES
+                    </p>
+
+                    <h2>
+                        Explore the analysis and source files
+                    </h2>
+
+                    <p>
+                        Replace the GitHub placeholder link after
+                        creating the separate project repository.
+                    </p>
+
+                </div>
+
+
+                <div class="project-resource-buttons">
+
+                    <!-- Replace YOUR-USERNAME when repository exists -->
+                    <a
+                        href="https://github.com/tamenee/sales-performance-analysis"
+                        class="button button-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View GitHub Repository
+                    </a>
+
+                    <a
+                        href="../analytics-projects.html"
+                        class="button button-secondary"
+                    >
+                        Back to Analytics Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             NEXT PROJECT
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container next-project-card">
+
+                <div>
+
+                    <p class="section-label">
+                        NEXT PROJECT
+                    </p>
+
+                    <h2>
+                        Customer Behaviour Analysis
+                    </h2>
+
+                    <p>
+                        The next case study will examine customer
+                        segments, purchasing patterns and retention
+                        indicators.
+                    </p>
+
+                </div>
+
+
+                <!--
+                    This currently returns to the Analytics page.
+                    Later change it to:
+                    customer-analysis.html
+                -->
+                <a
+                    href="../analytics-projects.html"
+                    class="project-link"
+                >
+                    View analytics portfolio →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         WEBSITE FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="current-year"></span>
+                Tamene Dandena. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <a
+                    href="https://github.com/tamenee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="YOUR-LINKEDIN-URL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="../contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!--
+        Loads the shared JavaScript file.
+
+        ../ is required because this page is inside projects/.
+    -->
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
