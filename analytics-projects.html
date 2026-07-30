@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Defines the character encoding used by the webpage. -->
     <meta charset="UTF-8">
 
+    <!-- Makes the page display correctly on computers, tablets and phones. -->
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
 
+    <!-- Short description used by search engines and link previews. -->
     <meta
         name="description"
-        content="Business analytics portfolio projects using SQL, Python, Excel and Power BI."
+        content="Business analytics portfolio featuring SQL, Python, Excel and Power BI project previews."
     >
 
-    <title>Business Analytics Projects | Data Analyst Portfolio</title>
+    <!-- Text displayed on the browser tab. -->
+    <title>
+        Analytics Projects | Data Analyst Portfolio
+    </title>
 
+    <!-- Connects this page to the shared website stylesheet. -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- =========================
-         Navigation
-    ========================== -->
+    <!-- =====================================================
+         WEBSITE HEADER
+         Uses the same navigation as the other portfolio pages.
+    ====================================================== -->
     <header class="site-header">
 
         <nav class="navbar container">
 
+            <!-- Replace Your Name with your professional name. -->
             <a href="index.html" class="logo">
-                Tamene Dandena
+                Your Name
             </a>
 
+            <!--
+                Mobile menu button.
+                The shared script.js file controls this button.
+            -->
             <button
                 class="menu-button"
                 id="menu-button"
+                type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="nav-links"
             >
                 ☰
             </button>
 
+            <!-- Main navigation links. -->
             <ul class="nav-links" id="nav-links">
 
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html">
+                        About
+                    </a>
                 </li>
 
                 <li>
+                    <!--
+                        The active class highlights the Analytics page.
+                    -->
                     <a
                         href="analytics-projects.html"
                         class="active"
@@ -66,15 +91,21 @@
                 </li>
 
                 <li>
-                    <a href="skills.html">Skills</a>
+                    <a href="skills.html">
+                        Skills
+                    </a>
                 </li>
 
                 <li>
-                    <a href="resume.html">Resume</a>
+                    <a href="resume.html">
+                        Resume
+                    </a>
                 </li>
 
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="contact.html">
+                        Contact
+                    </a>
                 </li>
 
             </ul>
@@ -84,109 +115,82 @@
     </header>
 
 
+    <!-- =====================================================
+         MAIN PAGE CONTENT
+    ====================================================== -->
     <main>
 
-        <!-- =========================
-             Page Hero
-        ========================== -->
+        <!-- =================================================
+             PAGE INTRODUCTION
+             Introduces the Analytics section without showing
+             unfinished project details.
+        ================================================== -->
         <section class="page-hero analytics-hero">
 
             <div class="container">
 
                 <p class="section-label">
-                    BUSINESS ANALYTICS PORTFOLIO
+                    BUSINESS ANALYTICS
                 </p>
 
                 <h1>
-                    Using data to understand performance,
+                    Projects focused on business performance,
                     customers and operations
                 </h1>
 
                 <p>
-                    These projects demonstrate how I use SQL, Python,
-                    Excel and Power BI to clean data, investigate
-                    business questions, build dashboards and
-                    communicate practical recommendations.
+                    This section presents selected analytics projects
+                    that demonstrate how SQL, Python, Excel and Power BI
+                    can be used to explore data and support business
+                    decision-making.
                 </p>
-
-                <div class="hero-stat-grid">
-
-                    <div class="hero-stat">
-
-                        <strong>3+</strong>
-
-                        <span>
-                            Business projects
-                        </span>
-
-                    </div>
-
-                    <div class="hero-stat">
-
-                        <strong>4</strong>
-
-                        <span>
-                            Main analytics tools
-                        </span>
-
-                    </div>
-
-                    <div class="hero-stat">
-
-                        <strong>End-to-end</strong>
-
-                        <span>
-                            Project workflow
-                        </span>
-
-                    </div>
-
-                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             Analytics Focus
-        ========================== -->
+        <!-- =================================================
+             ANALYTICS INTRODUCTION
+             Keeps the explanation brief and recruiter-friendly.
+        ================================================== -->
         <section class="section">
 
             <div class="container analytics-intro-grid">
 
+                <!-- Left side: short explanation -->
                 <div>
 
                     <p class="section-label">
-                        MY APPROACH
+                        PORTFOLIO FOCUS
                     </p>
 
                     <h2>
-                        Business questions come before tools
+                        Practical analytics for real business questions
                     </h2>
 
                     <p>
-                        I begin each project by identifying the
-                        business problem and the decisions that the
-                        analysis should support. I then prepare the
-                        data, explore relevant patterns and present
-                        the results through dashboards, visualisations
-                        and written recommendations.
+                        My analytics portfolio focuses on understanding
+                        performance, identifying patterns and presenting
+                        information through clear dashboards and
+                        visualisations.
                     </p>
 
                     <p>
-                        My portfolio focuses on practical areas such
-                        as sales performance, customer behaviour,
-                        operational efficiency and service management.
+                        The projects are currently being developed.
+                        Detailed case studies, datasets, code and
+                        findings will be added after the full portfolio
+                        website has been completed.
                     </p>
 
                 </div>
 
 
-                <div class="analytics-process-card">
+                <!-- Right side: simple list of analytics stages -->
+                <aside class="analytics-process-card">
 
                     <h3>
-                        Project workflow
+                        Analytics workflow
                     </h3>
 
                     <ol class="analytics-process-list">
@@ -195,10 +199,12 @@
                             <span>01</span>
 
                             <div>
-                                <strong>Define</strong>
+                                <strong>
+                                    Understand
+                                </strong>
+
                                 <p>
-                                    Identify the business problem and
-                                    required outcome.
+                                    Define the business question.
                                 </p>
                             </div>
                         </li>
@@ -207,10 +213,12 @@
                             <span>02</span>
 
                             <div>
-                                <strong>Prepare</strong>
+                                <strong>
+                                    Prepare
+                                </strong>
+
                                 <p>
-                                    Clean, validate and transform the
-                                    data.
+                                    Clean and organise the data.
                                 </p>
                             </div>
                         </li>
@@ -219,10 +227,12 @@
                             <span>03</span>
 
                             <div>
-                                <strong>Analyse</strong>
+                                <strong>
+                                    Analyse
+                                </strong>
+
                                 <p>
-                                    Use SQL, Python and statistical
-                                    techniques.
+                                    Explore trends and performance.
                                 </p>
                             </div>
                         </li>
@@ -231,26 +241,30 @@
                             <span>04</span>
 
                             <div>
-                                <strong>Communicate</strong>
+                                <strong>
+                                    Communicate
+                                </strong>
+
                                 <p>
-                                    Present findings and recommended
-                                    actions.
+                                    Present findings through dashboards.
                                 </p>
                             </div>
                         </li>
 
                     </ol>
 
-                </div>
+                </aside>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             Featured Project
-        ========================== -->
+        <!-- =================================================
+             PROJECT PREVIEW SECTION
+             Shows project images, names and short descriptions.
+             No case-study or GitHub links are included yet.
+        ================================================== -->
         <section class="section section-light">
 
             <div class="container">
@@ -258,146 +272,16 @@
                 <div class="section-heading">
 
                     <p class="section-label">
-                        FEATURED PROJECT
+                        PROJECT PREVIEWS
                     </p>
 
                     <h2>
-                        Sales Performance Dashboard
+                        Business analytics projects
                     </h2>
 
                     <p>
-                        A business intelligence project focused on
-                        revenue, profit, product performance and
-                        regional trends.
-                    </p>
-
-                </div>
-
-
-                <article class="featured-project">
-
-                    <div class="featured-project-image">
-
-                        <img
-                            src="assets/images/sales-dashboard.png"
-                            alt="Sales performance dashboard"
-                        >
-
-                    </div>
-
-
-                    <div class="featured-project-content">
-
-                        <p class="project-category">
-                            SALES AND BUSINESS INTELLIGENCE
-                        </p>
-
-                        <h3>
-                            Identifying sales trends and
-                            profitability opportunities
-                        </h3>
-
-                        <p>
-                            This project analyses sales transactions
-                            across products, customer segments,
-                            categories and geographic regions.
-                        </p>
-
-                        <p>
-                            The objective is to help management
-                            understand where revenue is growing,
-                            which products have weak margins and
-                            which regions require further attention.
-                        </p>
-
-
-                        <div class="project-detail-grid">
-
-                            <div>
-                                <span>Tools</span>
-
-                                <strong>
-                                    SQL, Excel, Power BI
-                                </strong>
-                            </div>
-
-                            <div>
-                                <span>Focus</span>
-
-                                <strong>
-                                    Revenue and profitability
-                                </strong>
-                            </div>
-
-                            <div>
-                                <span>Output</span>
-
-                                <strong>
-                                    Interactive dashboard
-                                </strong>
-                            </div>
-
-                            <div>
-                                <span>Project type</span>
-
-                                <strong>
-                                    Business intelligence
-                                </strong>
-                            </div>
-
-                        </div>
-
-
-                        <div class="project-actions">
-
-                            <a
-                                href="projects/sales-dashboard.html"
-                                class="button button-primary"
-                            >
-                                View Case Study
-                            </a>
-
-                            <a
-                                href="https://github.com/tamenee/sales-performance-analysis"
-                                class="button button-secondary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View GitHub Repository
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             Project Grid
-        ========================== -->
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        ANALYTICS PROJECTS
-                    </p>
-
-                    <h2>
-                        Selected portfolio projects
-                    </h2>
-
-                    <p>
-                        Each project includes a business problem,
-                        data-preparation process, analysis,
-                        visualisations, findings and recommendations.
+                        These projects are displayed as previews.
+                        Full project documentation will be added later.
                     </p>
 
                 </div>
@@ -405,14 +289,21 @@
 
                 <div class="analytics-project-grid">
 
-                    <!-- Project 1 -->
+                    <!-- =====================================
+                         PROJECT 1
+                         Sales Performance Dashboard
+                    ====================================== -->
                     <article class="analytics-project-card">
 
                         <div class="analytics-project-image">
 
+                            <!--
+                                Placeholder image location:
+                                assets/images/sales-dashboard.png
+                            -->
                             <img
-                                src="assets/images/customer-analysis.png"
-                                alt="Customer behaviour analysis dashboard"
+                                src="assets/images/sales-dashboard.png"
+                                alt="Sales performance dashboard project preview"
                             >
 
                         </div>
@@ -420,87 +311,107 @@
 
                         <div class="analytics-project-body">
 
-                            <div class="project-card-header">
+                            <p class="project-category">
+                                BUSINESS INTELLIGENCE
+                            </p>
 
-                                <p class="project-category">
-                                    CUSTOMER ANALYTICS
-                                </p>
+                            <h3>
+                                Sales Performance Dashboard
+                            </h3>
 
-                                <span class="project-status">
-                                    In Development
-                                </span>
+                            <p>
+                                A dashboard project exploring sales,
+                                revenue, profitability, product
+                                performance and regional trends.
+                            </p>
 
+                            <!-- Tools planned for the project. -->
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>Excel</span>
+                                <span>Power BI</span>
                             </div>
+
+                            <!--
+                                This is plain text rather than a link.
+                                It prevents visitors opening an
+                                unfinished case-study page.
+                            -->
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         PROJECT 2
+                         Customer Behaviour Analysis
+                    ====================================== -->
+                    <article class="analytics-project-card">
+
+                        <div class="analytics-project-image">
+
+                            <!--
+                                Placeholder image location:
+                                assets/images/customer-analysis.png
+                            -->
+                            <img
+                                src="assets/images/customer-analysis.png"
+                                alt="Customer behaviour analysis project preview"
+                            >
+
+                        </div>
+
+
+                        <div class="analytics-project-body">
+
+                            <p class="project-category">
+                                CUSTOMER ANALYTICS
+                            </p>
 
                             <h3>
                                 Customer Behaviour Analysis
                             </h3>
 
                             <p>
-                                Analysed customer segments, purchasing
-                                patterns, repeat purchases and
-                                retention indicators to identify
-                                opportunities for improving customer
-                                engagement.
+                                A project exploring customer segments,
+                                purchasing patterns, repeat purchases
+                                and engagement indicators.
                             </p>
 
-
-                            <div class="project-question">
-
-                                <span>Business question</span>
-
-                                <p>
-                                    Which customer groups create the
-                                    most value, and which show signs
-                                    of declining engagement?
-                                </p>
-
-                            </div>
-
-
                             <div class="project-tags">
-
                                 <span>Python</span>
                                 <span>SQL</span>
                                 <span>Power BI</span>
-                                <span>Customer Segmentation</span>
-
                             </div>
 
-
-                            <div class="project-card-actions">
-
-                                <a
-                                    href="projects/customer-analysis.html"
-                                    class="project-link"
-                                >
-                                    View case study →
-                                </a>
-
-                                <a
-                                    href="https://github.com/tamenee/customer-behaviour-analysis"
-                                    class="github-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    GitHub
-                                </a>
-
-                            </div>
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
 
                         </div>
 
                     </article>
 
 
-                    <!-- Project 2 -->
+                    <!-- =====================================
+                         PROJECT 3
+                         IT Help-Desk Performance Analysis
+                    ====================================== -->
                     <article class="analytics-project-card">
 
                         <div class="analytics-project-image">
 
+                            <!--
+                                Placeholder image location:
+                                assets/images/helpdesk-dashboard.png
+                            -->
                             <img
                                 src="assets/images/helpdesk-dashboard.png"
-                                alt="IT help-desk analytics dashboard"
+                                alt="IT help-desk performance analysis project preview"
                             >
 
                         </div>
@@ -508,90 +419,57 @@
 
                         <div class="analytics-project-body">
 
-                            <div class="project-card-header">
-
-                                <p class="project-category">
-                                    OPERATIONS ANALYTICS
-                                </p>
-
-                                <span class="project-status">
-                                    In Development
-                                </span>
-
-                            </div>
+                            <p class="project-category">
+                                OPERATIONS ANALYTICS
+                            </p>
 
                             <h3>
                                 IT Help-Desk Performance Analysis
                             </h3>
 
                             <p>
-                                Evaluated support-ticket volume,
-                                resolution times, ticket categories,
-                                SLA performance and technician workload
-                                to identify service-improvement
-                                opportunities.
+                                A service-management project exploring
+                                ticket volume, resolution times,
+                                categories and service-level performance.
                             </p>
 
-
-                            <div class="project-question">
-
-                                <span>Business question</span>
-
-                                <p>
-                                    What factors contribute to delayed
-                                    resolution and missed service-level
-                                    targets?
-                                </p>
-
-                            </div>
-
-
                             <div class="project-tags">
-
                                 <span>SQL</span>
                                 <span>Power BI</span>
                                 <span>Python</span>
-                                <span>Service Analytics</span>
-
                             </div>
 
-
-                            <div class="project-card-actions">
-
-                                <a
-                                    href="projects/helpdesk-analysis.html"
-                                    class="project-link"
-                                >
-                                    View case study →
-                                </a>
-
-                                <a
-                                    href="https://github.com/tamenee/helpdesk-performance-analysis"
-                                    class="github-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    GitHub
-                                </a>
-
-                            </div>
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
 
                         </div>
 
                     </article>
 
 
-                    <!-- Project 3 -->
+                    <!-- =====================================
+                         PROJECT 4
+                         Maryland Labour Market Analysis
+                    ====================================== -->
                     <article class="analytics-project-card">
 
+                        <!--
+                            A designed placeholder is used because a
+                            final project image has not been created.
+                        -->
                         <div class="analytics-project-placeholder">
 
                             <div>
-                                <span>PROJECT 04</span>
+
+                                <span>
+                                    PUBLIC DATA
+                                </span>
 
                                 <h3>
-                                    Maryland Labour Market Analysis
+                                    Maryland Labour Market
                                 </h3>
+
                             </div>
 
                         </div>
@@ -599,137 +477,29 @@
 
                         <div class="analytics-project-body">
 
-                            <div class="project-card-header">
-
-                                <p class="project-category">
-                                    PUBLIC DATA ANALYTICS
-                                </p>
-
-                                <span class="project-status">
-                                    Planned
-                                </span>
-
-                            </div>
+                            <p class="project-category">
+                                LABOUR MARKET ANALYTICS
+                            </p>
 
                             <h3>
                                 Maryland Labour Market Analysis
                             </h3>
 
                             <p>
-                                An analysis of occupational demand,
-                                salary patterns, employment trends and
-                                regional differences using public
-                                labour-market data.
+                                A public-data project exploring
+                                occupations, salaries, industries and
+                                employment trends across Maryland.
                             </p>
 
-
-                            <div class="project-question">
-
-                                <span>Business question</span>
-
-                                <p>
-                                    Which occupations and industries
-                                    offer the strongest employment
-                                    opportunities in Maryland?
-                                </p>
-
-                            </div>
-
-
                             <div class="project-tags">
-
                                 <span>Python</span>
                                 <span>SQL</span>
                                 <span>Power BI</span>
-                                <span>Public Data</span>
-
                             </div>
 
-
-                            <div class="project-card-actions">
-
-                                <span class="project-link muted-link">
-                                    Case study coming soon
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Project 4 -->
-                    <article class="analytics-project-card">
-
-                        <div class="analytics-project-placeholder">
-
-                            <div>
-                                <span>PROJECT 05</span>
-
-                                <h3>
-                                    Financial Performance Analysis
-                                </h3>
-                            </div>
-
-                        </div>
-
-
-                        <div class="analytics-project-body">
-
-                            <div class="project-card-header">
-
-                                <p class="project-category">
-                                    FINANCIAL ANALYTICS
-                                </p>
-
-                                <span class="project-status">
-                                    Planned
-                                </span>
-
-                            </div>
-
-                            <h3>
-                                Financial Performance Analysis
-                            </h3>
-
-                            <p>
-                                A planned analysis of revenue, operating
-                                costs, profit margins, budget variance
-                                and financial performance over time.
+                            <p class="project-preview-note">
+                                Detailed project coming later
                             </p>
-
-
-                            <div class="project-question">
-
-                                <span>Business question</span>
-
-                                <p>
-                                    Which cost categories and business
-                                    units have the greatest effect on
-                                    profitability?
-                                </p>
-
-                            </div>
-
-
-                            <div class="project-tags">
-
-                                <span>Excel</span>
-                                <span>SQL</span>
-                                <span>Power BI</span>
-                                <span>Financial Reporting</span>
-
-                            </div>
-
-
-                            <div class="project-card-actions">
-
-                                <span class="project-link muted-link">
-                                    Case study coming soon
-                                </span>
-
-                            </div>
 
                         </div>
 
@@ -742,9 +512,10 @@
         </section>
 
 
-        <!-- =========================
-             Tools Section
-        ========================== -->
+        <!-- =================================================
+             ANALYTICS TOOLS SECTION
+             Shows the main tools without project-level details.
+        ================================================== -->
         <section class="section section-dark">
 
             <div class="container">
@@ -756,13 +527,13 @@
                     </p>
 
                     <h2>
-                        Tools used across my projects
+                        Tools used across the portfolio
                     </h2>
 
                     <p>
-                        I use a combination of query, programming,
-                        spreadsheet and visualisation tools depending
-                        on the project requirements.
+                        The tools selected for each project depend on
+                        the dataset, business question and intended
+                        output.
                     </p>
 
                 </div>
@@ -770,69 +541,77 @@
 
                 <div class="analytics-tool-grid">
 
+                    <!-- SQL -->
                     <article class="analytics-tool-card">
 
                         <span class="tool-number">
                             01
                         </span>
 
-                        <h3>SQL</h3>
+                        <h3>
+                            SQL
+                        </h3>
 
                         <p>
-                            Data extraction, joins, aggregation,
-                            common table expressions, window
-                            functions and business reporting.
+                            Used to query, join, organise and summarise
+                            structured business data.
                         </p>
 
                     </article>
 
 
+                    <!-- Python -->
                     <article class="analytics-tool-card">
 
                         <span class="tool-number">
                             02
                         </span>
 
-                        <h3>Python</h3>
+                        <h3>
+                            Python
+                        </h3>
 
                         <p>
-                            Data cleaning, exploratory analysis,
-                            automation, statistical analysis and
-                            visualisation.
+                            Used for data cleaning, analysis,
+                            visualisation and automation.
                         </p>
 
                     </article>
 
 
+                    <!-- Power BI -->
                     <article class="analytics-tool-card">
 
                         <span class="tool-number">
                             03
                         </span>
 
-                        <h3>Power BI</h3>
+                        <h3>
+                            Power BI
+                        </h3>
 
                         <p>
-                            Data modelling, DAX measures, KPI
-                            dashboards, filtering and interactive
-                            business reporting.
+                            Used to build interactive dashboards,
+                            measures and business reports.
                         </p>
 
                     </article>
 
 
+                    <!-- Excel -->
                     <article class="analytics-tool-card">
 
                         <span class="tool-number">
                             04
                         </span>
 
-                        <h3>Excel</h3>
+                        <h3>
+                            Excel
+                        </h3>
 
                         <p>
-                            Pivot tables, lookup functions, Power
-                            Query, data validation and business
-                            analysis.
+                            Used for data review, calculations, pivot
+                            tables and preliminary business analysis.
                         </p>
 
                     </article>
@@ -844,110 +623,52 @@
         </section>
 
 
-        <!-- =========================
-             Project Standards
-        ========================== -->
+        <!-- =================================================
+             MACHINE LEARNING DIRECTION
+             Connects Analytics with the next portfolio page.
+        ================================================== -->
         <section class="section">
 
-            <div class="container">
+            <div class="container project-two-column">
 
-                <div class="section-heading">
+                <div>
 
                     <p class="section-label">
-                        PROJECT STANDARDS
+                        NEXT AREA
                     </p>
 
                     <h2>
-                        What every completed project will include
+                        Moving from descriptive analytics to prediction
                     </h2>
+
+                    <p>
+                        The Machine Learning section presents projects
+                        that extend traditional analytics with
+                        classification, prediction and model
+                        evaluation.
+                    </p>
 
                 </div>
 
 
-                <div class="project-standard-grid">
+                <div class="business-problem-card">
 
-                    <div class="project-standard-item">
+                    <h3>
+                        Machine Learning Projects
+                    </h3>
 
-                        <strong>
-                            Business context
-                        </strong>
+                    <p>
+                        Explore planned projects including customer
+                        churn prediction, classification and natural
+                        language processing.
+                    </p>
 
-                        <p>
-                            A clear explanation of the problem,
-                            stakeholders and intended decision.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-standard-item">
-
-                        <strong>
-                            Data preparation
-                        </strong>
-
-                        <p>
-                            Documentation of cleaning, validation,
-                            transformation and assumptions.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-standard-item">
-
-                        <strong>
-                            Analysis
-                        </strong>
-
-                        <p>
-                            SQL queries, Python notebooks and
-                            relevant calculations.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-standard-item">
-
-                        <strong>
-                            Dashboard
-                        </strong>
-
-                        <p>
-                            Clear KPI reporting and visualisation
-                            of the most important findings.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-standard-item">
-
-                        <strong>
-                            Recommendations
-                        </strong>
-
-                        <p>
-                            Practical actions based on the evidence
-                            discovered during the analysis.
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-standard-item">
-
-                        <strong>
-                            GitHub documentation
-                        </strong>
-
-                        <p>
-                            A complete README with instructions,
-                            screenshots and project structure.
-                        </p>
-
-                    </div>
+                    <a
+                        href="machine-learning.html"
+                        class="project-link"
+                    >
+                        View Machine Learning page →
+                    </a>
 
                 </div>
 
@@ -956,9 +677,9 @@
         </section>
 
 
-        <!-- =========================
-             Contact CTA
-        ========================== -->
+        <!-- =================================================
+             CONTACT CALL-TO-ACTION
+        ================================================== -->
         <section class="section contact-cta">
 
             <div class="container contact-cta-content">
@@ -970,13 +691,13 @@
                     </p>
 
                     <h2>
-                        Looking for an entry-level data analyst?
+                        Interested in discussing an analytics role?
                     </h2>
 
                     <p>
-                        I am interested in data analyst, business
-                        intelligence, reporting and operations
-                        analytics opportunities in the United States.
+                        I am interested in entry-level Data Analyst,
+                        Business Intelligence, Reporting and Operations
+                        Analytics opportunities in the United States.
                     </p>
 
                 </div>
@@ -995,20 +716,21 @@
     </main>
 
 
-    <!-- =========================
-         Footer
-    ========================== -->
+    <!-- =====================================================
+         WEBSITE FOOTER
+    ====================================================== -->
     <footer class="site-footer">
 
         <div class="container footer-content">
 
             <p>
                 © <span id="current-year"></span>
-                Tamene Dandena. All rights reserved.
+                Your Name. All rights reserved.
             </p>
 
             <div class="footer-links">
 
+                <!-- Replace YOUR-USERNAME with your GitHub username. -->
                 <a
                     href="https://github.com/YOUR-USERNAME"
                     target="_blank"
@@ -1017,8 +739,9 @@
                     GitHub
                 </a>
 
+                <!-- Replace YOUR-LINKEDIN-URL. -->
                 <a
-                    href="https://linkedin.com/in/tamene-dandena"
+                    href="YOUR-LINKEDIN-URL"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -1035,7 +758,10 @@
 
     </footer>
 
+
+    <!-- Loads the shared mobile-menu and footer-year JavaScript. -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
