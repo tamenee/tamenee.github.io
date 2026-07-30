@@ -1250,6 +1250,18 @@ textarea {
    Tablet Responsive Design
 ================================== */
 
+/* ==========================================================
+   PROJECT PREVIEW MESSAGE
+   Used when a project is displayed but its detailed case
+   study has not yet been published.
+========================================================== */
+
+.project-preview-note {
+    margin-top: 22px;
+    color: var(--primary);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
 @media (max-width: 960px) {
 
 .analytics-intro-grid,
