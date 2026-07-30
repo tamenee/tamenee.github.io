@@ -581,6 +581,279 @@ textarea {
     color: var(--white);
 }
 
+/* ==================================
+   General Page Hero
+================================== */
+
+.page-hero {
+    padding: 100px 0 80px;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(37, 99, 235, 0.14),
+            transparent 34%
+        ),
+        var(--background-light);
+    border-bottom: 1px solid var(--border);
+}
+
+.page-hero h1 {
+    max-width: 900px;
+    margin-bottom: 24px;
+    color: var(--heading);
+    font-size: clamp(2.7rem, 6vw, 4.7rem);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.page-hero > .container > p:last-child {
+    max-width: 780px;
+    font-size: 1.15rem;
+}
+
+
+/* ==================================
+   About Page
+================================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+    gap: 72px;
+    align-items: start;
+}
+
+.about-image-card {
+    position: sticky;
+    top: 110px;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow-large);
+}
+
+.about-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: #e2e8f0;
+}
+
+.about-image-content {
+    padding: 28px;
+}
+
+.about-image-content h2 {
+    color: var(--heading);
+    font-size: 1.7rem;
+}
+
+.about-content h2,
+.career-layout h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.about-content > p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.about-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+
+/* ==================================
+   Education
+================================== */
+
+.education-card {
+    padding: 38px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+.education-header {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.education-type {
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.education-header h3 {
+    color: var(--heading);
+    font-size: 1.55rem;
+}
+
+.education-school {
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.education-date {
+    color: var(--primary);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.education-description {
+    max-width: 850px;
+    margin-bottom: 26px;
+}
+
+.course-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-grid span {
+    padding: 8px 13px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 999px;
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* ==================================
+   Strengths
+================================== */
+
+.strength-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.strength-card {
+    padding: 32px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+.strength-icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #eff6ff;
+    border-radius: 12px;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.strength-card h3 {
+    margin-bottom: 12px;
+    color: var(--heading);
+    font-size: 1.3rem;
+}
+
+
+/* ==================================
+   Process
+================================== */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.process-card {
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--border-radius);
+}
+
+.process-number {
+    margin-bottom: 22px;
+    color: #60a5fa;
+    font-weight: 800;
+}
+
+.process-card h3 {
+    margin-bottom: 12px;
+    color: var(--white);
+}
+
+.process-card p:last-child {
+    color: var(--light-text);
+}
+
+/* ==================================
+   Career Direction
+================================== */
+
+.career-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.career-layout > div:first-child p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.career-card {
+    padding: 32px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+.career-card h3 {
+    margin-bottom: 20px;
+    color: var(--heading);
+}
+
+.career-card ul {
+    display: grid;
+    gap: 12px;
+    list-style: none;
+}
+
+.career-card li {
+    position: relative;
+    padding-left: 24px;
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.career-card li::before {
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    content: "✓";
+    font-weight: 800;
+}
 
 /* ==================================
    Tablet Responsive Design
@@ -637,6 +910,22 @@ textarea {
     .menu-button {
         display: block;
     }
+
+    /* About page tablet rules */
+
+    .about-grid,
+    .career-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image-card {
+        position: static;
+        max-width: 460px;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -684,5 +973,33 @@ textarea {
 
     .footer-links {
         flex-wrap: wrap;
+    }
+
+    /* About page mobile rules */
+
+    .page-hero {
+        padding: 74px 0 60px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .strength-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .education-card {
+        padding: 26px;
+    }
+
+    .about-buttons {
+        flex-direction: column;
     }
 }
