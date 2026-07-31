@@ -1,1 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <!--
+        Defines the character encoding used by the page.
+        UTF-8 supports standard text and common symbols.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Makes the page responsive on desktop computers,
+        tablets and mobile phones.
+    -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!--
+        Short page description used by search engines
+        and link previews.
+    -->
+    <meta
+        name="description"
+        content="Data Analyst skills portfolio covering SQL, Python, Excel, Power BI, business intelligence, machine learning and data visualisation."
+    >
+
+    <!--
+        Text displayed in the browser tab.
+        Replace Your Name with your professional name.
+    -->
+    <title>
+        Skills | Tamene Dandena
+    </title>
+
+    <!--
+        Connects this page to the shared stylesheet.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         WEBSITE HEADER
+         Uses the same navigation as every other portfolio page.
+    ====================================================== -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <!--
+                Website logo or professional name.
+                Clicking it returns the visitor to the Home page.
+            -->
+            <a href="index.html" class="logo">
+                Tamene Dandena
+            </a>
+
+            <!--
+                Mobile navigation button.
+                The shared script.js file opens and closes the menu.
+            -->
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <!-- Main website navigation -->
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="analytics-projects.html">
+                        Analytics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="machine-learning.html">
+                        Machine Learning
+                    </a>
+                </li>
+
+                <li>
+                    <!--
+                        The active class highlights this page.
+                    -->
+                    <a
+                        href="skills.html"
+                        class="active"
+                    >
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN PAGE CONTENT
+    ====================================================== -->
+    <main>
+
+        <!-- =================================================
+             PAGE HERO
+             Introduces your technical and analytical toolkit.
+        ================================================== -->
+        <section class="page-hero skills-hero">
+
+            <div class="container">
+
+                <p class="section-label">
+                    SKILLS AND TOOLS
+                </p>
+
+                <h1>
+                    Technical skills for turning data into
+                    useful business insight
+                </h1>
+
+                <p>
+                    My skill set combines business analytics,
+                    programming, data visualisation, machine learning
+                    and practical technology experience.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SKILLS INTRODUCTION
+             Gives recruiters a quick explanation of your profile.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container skills-intro-grid">
+
+                <!-- Left side: professional overview -->
+                <div>
+
+                    <p class="section-label">
+                        PROFESSIONAL TOOLKIT
+                    </p>
+
+                    <h2>
+                        A balanced combination of analysis,
+                        technology and communication
+                    </h2>
+
+                    <p>
+                        My primary focus is data analytics using SQL,
+                        Python, Excel and Power BI. I use these tools
+                        to prepare data, identify trends, build
+                        dashboards and communicate findings.
+                    </p>
+
+                    <p>
+                        My Computer Science and IT background also helps
+                        me understand the technical environments where
+                        business data is created, stored and supported.
+                    </p>
+
+                    <p>
+                        The skills listed on this page represent areas
+                        used in my education, technical experience and
+                        developing portfolio projects.
+                    </p>
+
+                </div>
+
+
+                <!-- Right side: simple professional summary -->
+                <aside class="skills-summary-card">
+
+                    <p class="section-label">
+                        PRIMARY DIRECTION
+                    </p>
+
+                    <h3>
+                        Data Analyst
+                    </h3>
+
+                    <p>
+                        Business Analytics · SQL · Python · Excel ·
+                        Power BI · Data Visualisation
+                    </p>
+
+                    <div class="skills-summary-divider"></div>
+
+                    <p class="section-label">
+                        SUPPORTING KNOWLEDGE
+                    </p>
+
+                    <p>
+                        Machine Learning · Cloud Fundamentals ·
+                        IT Infrastructure · Git and GitHub
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CORE DATA ANALYTICS SKILLS
+             Presents the skills most relevant to Data Analyst roles.
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        CORE ANALYTICS SKILLS
+                    </p>
+
+                    <h2>
+                        Skills used across business analytics projects
+                    </h2>
+
+                    <p>
+                        These are the main capabilities I use to move
+                        from raw data to dashboards, findings and
+                        practical recommendations.
+                    </p>
+
+                </div>
+
+
+                <div class="core-skills-grid">
+
+                    <!-- =====================================
+                         SQL and Databases
+                    ====================================== -->
+                    <article class="core-skill-card">
+
+                        <div class="core-skill-number">
+                            01
+                        </div>
+
+                        <h3>
+                            SQL and Databases
+                        </h3>
+
+                        <p>
+                            Querying, joining, filtering and summarising
+                            structured data for analysis and reporting.
+                        </p>
+
+                        <ul class="skill-detail-list">
+                            <li>SELECT, WHERE and ORDER BY</li>
+                            <li>INNER, LEFT and multi-table joins</li>
+                            <li>GROUP BY and aggregate functions</li>
+                            <li>CASE expressions</li>
+                            <li>Common table expressions</li>
+                            <li>Subqueries and window functions</li>
+                            <li>Data validation and duplicate checks</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         Python for Analytics
+                    ====================================== -->
+                    <article class="core-skill-card">
+
+                        <div class="core-skill-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Python for Analytics
+                        </h3>
+
+                        <p>
+                            Using Python to clean, explore, transform
+                            and visualise business data.
+                        </p>
+
+                        <ul class="skill-detail-list">
+                            <li>pandas and NumPy</li>
+                            <li>Data cleaning and transformation</li>
+                            <li>Exploratory data analysis</li>
+                            <li>Missing-value handling</li>
+                            <li>Grouping and aggregation</li>
+                            <li>Basic statistical analysis</li>
+                            <li>Reusable scripts and functions</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         Excel
+                    ====================================== -->
+                    <article class="core-skill-card">
+
+                        <div class="core-skill-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Excel and Spreadsheets
+                        </h3>
+
+                        <p>
+                            Using spreadsheets for business analysis,
+                            data review and operational reporting.
+                        </p>
+
+                        <ul class="skill-detail-list">
+                            <li>Pivot tables and pivot charts</li>
+                            <li>XLOOKUP and lookup functions</li>
+                            <li>Conditional formulas</li>
+                            <li>Data validation</li>
+                            <li>Sorting and filtering</li>
+                            <li>Power Query fundamentals</li>
+                            <li>Summary tables and charts</li>
+                        </ul>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         Power BI
+                    ====================================== -->
+                    <article class="core-skill-card">
+
+                        <div class="core-skill-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Power BI
+                        </h3>
+
+                        <p>
+                            Designing interactive dashboards and
+                            management reports that communicate
+                            performance clearly.
+                        </p>
+
+                        <ul class="skill-detail-list">
+                            <li>Data import and transformation</li>
+                            <li>Data relationships and modelling</li>
+                            <li>DAX measures and calculated fields</li>
+                            <li>KPI cards and trend visuals</li>
+                            <li>Filters and slicers</li>
+                            <li>Dashboard navigation</li>
+                            <li>Business-focused report design</li>
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DATA VISUALISATION AND COMMUNICATION
+        ================================================== -->
+        <section class="section">
+
+            <div class="container skill-feature-layout">
+
+                <!-- Left side: visualisation explanation -->
+                <div>
+
+                    <p class="section-label">
+                        DATA COMMUNICATION
+                    </p>
+
+                    <h2>
+                        Presenting analysis clearly
+                    </h2>
+
+                    <p>
+                        Good analysis is only useful when the intended
+                        audience can understand it. I focus on
+                        organising information so that technical and
+                        non-technical stakeholders can identify the
+                        most important results.
+                    </p>
+
+                    <p>
+                        My visualisation approach prioritises clear
+                        labels, useful comparisons, consistent
+                        formatting and a logical flow from summary
+                        information to supporting detail.
+                    </p>
+
+                </div>
+
+
+                <!-- Right side: communication skills -->
+                <div class="communication-skill-grid">
+
+                    <article class="communication-skill-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Dashboard Design
+                        </h3>
+
+                        <p>
+                            Creating structured dashboard layouts that
+                            highlight KPIs, trends and areas requiring
+                            attention.
+                        </p>
+
+                    </article>
+
+
+                    <article class="communication-skill-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Data Storytelling
+                        </h3>
+
+                        <p>
+                            Connecting charts and findings to a clear
+                            business question and practical conclusion.
+                        </p>
+
+                    </article>
+
+
+                    <article class="communication-skill-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Written Reporting
+                        </h3>
+
+                        <p>
+                            Summarising methods, findings, limitations
+                            and recommendations in clear language.
+                        </p>
+
+                    </article>
+
+
+                    <article class="communication-skill-card">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Stakeholder Communication
+                        </h3>
+
+                        <p>
+                            Explaining technical findings to audiences
+                            with different levels of data knowledge.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MACHINE LEARNING SKILLS
+             Keeps ML visible but secondary to Data Analytics.
+        ================================================== -->
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-light">
+
+                    <p class="section-label">
+                        MACHINE LEARNING
+                    </p>
+
+                    <h2>
+                        Predictive modelling and data-science skills
+                    </h2>
+
+                    <p>
+                        These skills support projects involving
+                        classification, prediction and natural
+                        language processing.
+                    </p>
+
+                </div>
+
+
+                <div class="technical-skill-grid">
+
+                    <!-- Model development -->
+                    <article class="technical-skill-card">
+
+                        <span class="tool-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Model Development
+                        </h3>
+
+                        <p>
+                            Preparing features and building
+                            classification and regression models.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Model evaluation -->
+                    <article class="technical-skill-card">
+
+                        <span class="tool-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Model Evaluation
+                        </h3>
+
+                        <p>
+                            Comparing models using suitable validation
+                            approaches and performance metrics.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Deep learning -->
+                    <article class="technical-skill-card">
+
+                        <span class="tool-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Deep Learning
+                        </h3>
+
+                        <p>
+                            Academic experience with neural networks,
+                            TensorFlow, Keras and PyTorch.
+                        </p>
+
+                    </article>
+
+
+                    <!-- NLP -->
+                    <article class="technical-skill-card">
+
+                        <span class="tool-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Natural Language Processing
+                        </h3>
+
+                        <p>
+                            Academic and project experience with text
+                            processing, classification and language
+                            models.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DEVELOPMENT AND WORKFLOW TOOLS
+        ================================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        DEVELOPMENT WORKFLOW
+                    </p>
+
+                    <h2>
+                        Tools supporting reproducible project work
+                    </h2>
+
+                    <p>
+                        These tools help organise code, document
+                        projects and maintain a clear development
+                        workflow.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-tool-grid">
+
+                    <!-- Git and GitHub -->
+                    <article class="workflow-tool-card">
+
+                        <h3>
+                            Git and GitHub
+                        </h3>
+
+                        <p>
+                            Version control, repository organisation,
+                            project documentation and GitHub Pages.
+                        </p>
+
+                        <div class="skill-tag-list">
+                            <span>Repositories</span>
+                            <span>Commits</span>
+                            <span>Branches</span>
+                            <span>README files</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Jupyter -->
+                    <article class="workflow-tool-card">
+
+                        <h3>
+                            Jupyter Notebook
+                        </h3>
+
+                        <p>
+                            Interactive data exploration, code
+                            documentation, visualisation and model
+                            experimentation.
+                        </p>
+
+                        <div class="skill-tag-list">
+                            <span>Notebooks</span>
+                            <span>Markdown</span>
+                            <span>Analysis</span>
+                            <span>Visualisation</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- VS Code and Cursor -->
+                    <article class="workflow-tool-card">
+
+                        <h3>
+                            VS Code and Cursor
+                        </h3>
+
+                        <p>
+                            Writing Python, HTML, CSS, SQL and project
+                            documentation in an organised development
+                            environment.
+                        </p>
+
+                        <div class="skill-tag-list">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Environments -->
+                    <article class="workflow-tool-card">
+
+                        <h3>
+                            Development Environments
+                        </h3>
+
+                        <p>
+                            Using virtual environments, package
+                            requirements and organised project folders.
+                        </p>
+
+                        <div class="skill-tag-list">
+                            <span>venv</span>
+                            <span>pip</span>
+                            <span>requirements.txt</span>
+                            <span>.gitignore</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SUPPORTING TECHNOLOGY KNOWLEDGE
+             Shows your IT background without distracting from
+             the primary Data Analyst positioning.
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container supporting-skills-layout">
+
+                <!-- Left side -->
+                <div>
+
+                    <p class="section-label">
+                        SUPPORTING TECHNICAL KNOWLEDGE
+                    </p>
+
+                    <h2>
+                        Understanding the systems behind the data
+                    </h2>
+
+                    <p>
+                        My wider technology background helps me
+                        understand data produced by enterprise systems,
+                        user-support environments, cloud platforms and
+                        networked infrastructure.
+                    </p>
+
+                    <p>
+                        This is particularly useful for operational,
+                        service-management, infrastructure and
+                        technology-focused analytics roles.
+                    </p>
+
+                </div>
+
+
+                <!-- Right side -->
+                <div class="supporting-skills-card">
+
+                    <div>
+                        <strong>
+                            Cloud
+                        </strong>
+
+                        <p>
+                            AWS fundamentals, cloud services and
+                            infrastructure concepts
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>
+                            IT Operations
+                        </strong>
+
+                        <p>
+                            Service desks, ticketing, SLAs, endpoint
+                            support and operational workflows
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Networking
+                        </strong>
+
+                        <p>
+                            LAN, WAN, wireless, DNS, DHCP, routing and
+                            infrastructure monitoring
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>
+                            Automation
+                        </strong>
+
+                        <p>
+                            Python, PowerShell, Bash, Ansible and
+                            workflow improvement
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SKILL DEVELOPMENT NOTE
+             Avoids claiming that every skill is expert-level.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container skill-development-panel">
+
+                <div>
+
+                    <p class="section-label">
+                        CONTINUOUS DEVELOPMENT
+                    </p>
+
+                    <h2>
+                        Building skills through practical projects
+                    </h2>
+
+                    <p>
+                        I continue to strengthen my analytics skills
+                        through portfolio projects, technical exercises,
+                        public datasets and structured learning.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="analytics-projects.html"
+                    class="button button-primary"
+                >
+                    View Analytics Projects
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT CALL-TO-ACTION
+        ================================================== -->
+        <section class="section contact-cta">
+
+            <div class="container contact-cta-content">
+
+                <div>
+
+                    <p class="section-label">
+                        OPEN TO OPPORTUNITIES
+                    </p>
+
+                    <h2>
+                        Looking for analytical and technical
+                        problem-solving skills?
+                    </h2>
+
+                    <p>
+                        I am interested in entry-level Data Analyst,
+                        Business Intelligence, Reporting and
+                        Operations Analytics opportunities in the
+                        United States.
+                    </p>
+
+                </div>
+
+                <a
+                    href="contact.html"
+                    class="button button-primary"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         WEBSITE FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="current-year"></span>
+                Tamene Dandena. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <!-- Replace YOUR-USERNAME with your GitHub username. -->
+                <a
+                    href="https://github.com/tamenee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <!-- Replace YOUR-LINKEDIN-URL. -->
+                <a
+                    href="https://www.linkedin.com/in/tamene-dandena"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!--
+        Loads the shared JavaScript used for the mobile menu
+        and automatic footer year.
+    -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
