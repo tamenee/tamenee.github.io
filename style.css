@@ -1253,7 +1253,7 @@ textarea {
 /* ==========================================================
    PROJECT PREVIEW MESSAGE
    Used when a project is displayed but its detailed case
-   study has not yet been published.
+   study has not yet been published. For Analytics button
 ========================================================== */
 
 .project-preview-note {
@@ -1261,6 +1261,290 @@ textarea {
     color: var(--primary);
     font-size: 0.88rem;
     font-weight: 700;
+}
+
+/* ==========================================================
+   MACHINE LEARNING PAGE
+   Controls the layout of the Machine Learning menu page.
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Machine Learning hero
+   Adds a subtle blue background effect to the page header.
+---------------------------------------------------------- */
+
+.machine-learning-hero {
+    background:
+        radial-gradient(
+            circle at 82% 18%,
+            rgba(37, 99, 235, 0.18),
+            transparent 31%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+}
+
+
+/* ----------------------------------------------------------
+   Machine Learning introduction
+---------------------------------------------------------- */
+
+.ml-intro-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 72px;
+    align-items: start;
+}
+
+
+/* Main heading inside the introduction section */
+.ml-intro-grid h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Adds spacing between introduction paragraphs */
+.ml-intro-grid > div:first-child p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+
+/* ----------------------------------------------------------
+   Machine Learning process card
+---------------------------------------------------------- */
+
+.ml-process-card {
+    padding: 32px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Process card heading */
+.ml-process-card h3 {
+    margin-bottom: 24px;
+    color: var(--heading);
+    font-size: 1.35rem;
+}
+
+
+/* Removes default numbering and creates a custom layout */
+.ml-process-list {
+    display: grid;
+    gap: 22px;
+    list-style: none;
+}
+
+
+/* Places the number beside the process description */
+.ml-process-list li {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 16px;
+}
+
+
+/* Blue process number box */
+.ml-process-list li > span {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    border-radius: 10px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+
+/* Process title */
+.ml-process-list strong {
+    color: var(--heading);
+}
+
+
+/* Process description */
+.ml-process-list p {
+    margin-top: 4px;
+    font-size: 0.92rem;
+}
+
+
+/* ----------------------------------------------------------
+   Machine Learning project cards
+---------------------------------------------------------- */
+
+.ml-project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* Main project card */
+.ml-project-card {
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Raises the card slightly when the visitor moves over it */
+.ml-project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-large);
+}
+
+
+/* Project image container */
+.ml-project-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+
+/* Makes the project image fill its container */
+.ml-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Designed placeholder used when no project image exists */
+.ml-project-placeholder {
+    display: flex;
+    min-height: 280px;
+    align-items: flex-end;
+    padding: 34px;
+    background:
+        linear-gradient(
+            145deg,
+            #eff6ff,
+            #dbeafe
+        );
+}
+
+
+/* Small label inside the placeholder */
+.ml-project-placeholder span {
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+
+/* Large placeholder title */
+.ml-project-placeholder h3 {
+    max-width: 420px;
+    margin-top: 10px;
+    color: var(--heading);
+    font-size: 2rem;
+    line-height: 1.15;
+}
+
+
+/* Text content under each project image */
+.ml-project-body {
+    padding: 30px;
+}
+
+
+/* Project title */
+.ml-project-body h3 {
+    margin: 10px 0 14px;
+    color: var(--heading);
+    font-size: 1.45rem;
+    line-height: 1.3;
+}
+
+
+/* ----------------------------------------------------------
+   Machine Learning capability cards
+---------------------------------------------------------- */
+
+.ml-capability-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* Individual capability card */
+.ml-capability-card {
+    padding: 28px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Capability number */
+.ml-capability-card > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+
+/* Capability title */
+.ml-capability-card h3 {
+    margin-bottom: 12px;
+    color: var(--heading);
+}
+
+
+/* ----------------------------------------------------------
+   Machine Learning tools
+---------------------------------------------------------- */
+
+.ml-tool-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* Individual tool card on the dark section */
+.ml-tool-card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--border-radius);
+}
+
+
+/* Tool title */
+.ml-tool-card h3 {
+    margin-bottom: 12px;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+
+/* Tool description */
+.ml-tool-card p {
+    color: var(--light-text);
 }
 @media (max-width: 960px) {
 
