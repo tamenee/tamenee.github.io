@@ -1944,6 +1944,462 @@ textarea {
     color: var(--heading);
     font-size: clamp(2rem, 4vw, 3rem);
     line-height: 1.2;
+
+   /* ==========================================================
+   RÉSUMÉ PAGE
+   Controls the layout and appearance of resume.html.
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Résumé hero
+---------------------------------------------------------- */
+
+.resume-hero {
+    background:
+        radial-gradient(
+            circle at 84% 18%,
+            rgba(37, 99, 235, 0.17),
+            transparent 31%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+}
+
+
+/* Creates a two-column layout inside the résumé hero */
+.resume-hero-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 72px;
+    align-items: center;
+}
+
+
+/* Controls the résumé hero title */
+.resume-hero-layout h1 {
+    max-width: 900px;
+    margin-bottom: 24px;
+    color: var(--heading);
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    line-height: 1.07;
+    letter-spacing: -0.04em;
+}
+
+
+/* Limits the width of the résumé hero description */
+.resume-hero-layout > div:first-child > p:last-of-type {
+    max-width: 800px;
+    font-size: 1.1rem;
+}
+
+
+/* Holds the PDF action buttons */
+.resume-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+
+/* ----------------------------------------------------------
+   Résumé profile card
+---------------------------------------------------------- */
+
+.resume-profile-card {
+    padding: 34px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow-large);
+}
+
+
+/* Name displayed inside the profile card */
+.resume-profile-card h2 {
+    margin: 8px 0 4px;
+    color: var(--heading);
+    font-size: 2rem;
+}
+
+
+/* Main professional role */
+.resume-role {
+    margin-bottom: 14px;
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+
+/* Container for location and availability information */
+.resume-profile-details {
+    display: grid;
+    gap: 0;
+    margin-top: 28px;
+}
+
+
+/* Individual profile detail row */
+.resume-profile-details > div {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Removes the final border */
+.resume-profile-details > div:last-child {
+    border-bottom: 0;
+}
+
+
+/* Small profile detail label */
+.resume-profile-details span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Profile detail value */
+.resume-profile-details strong {
+    color: var(--heading);
+}
+
+
+/* ----------------------------------------------------------
+   Shared résumé section layout
+---------------------------------------------------------- */
+
+.resume-section-layout {
+    display: grid;
+    grid-template-columns: 0.3fr 1.7fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* Left-side section label and heading */
+.resume-section-label {
+    position: sticky;
+    top: 110px;
+}
+
+
+/* Section title */
+.resume-section-label h2 {
+    color: var(--heading);
+    font-size: 1.45rem;
+    line-height: 1.25;
+}
+
+
+/* Light title used inside the dark section */
+.resume-section-label-light h2 {
+    color: var(--white);
+}
+
+
+/* Main résumé content area */
+.resume-section-content {
+    min-width: 0;
+}
+
+
+/* Professional summary text */
+.resume-summary-text {
+    margin-bottom: 18px;
+    color: var(--heading);
+    font-size: 1.08rem;
+    line-height: 1.85;
+}
+
+
+/* ----------------------------------------------------------
+   Résumé skill groups
+---------------------------------------------------------- */
+
+.resume-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+
+/* Individual résumé skill group */
+.resume-skill-group {
+    padding: 26px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Skill group heading */
+.resume-skill-group h3 {
+    margin-bottom: 10px;
+    color: var(--heading);
+    font-size: 1.15rem;
+}
+
+
+/* ----------------------------------------------------------
+   Professional experience timeline
+---------------------------------------------------------- */
+
+.resume-timeline {
+    position: relative;
+    display: grid;
+    gap: 28px;
+}
+
+
+/* Vertical line connecting experience entries */
+.resume-timeline::before {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 8px;
+    width: 2px;
+    background: #dbeafe;
+    content: "";
+}
+
+
+/* Individual experience item */
+.resume-experience-item {
+    position: relative;
+    margin-left: 34px;
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+
+/* Blue timeline marker */
+.resume-experience-item::before {
+    position: absolute;
+    top: 34px;
+    left: -34px;
+    width: 18px;
+    height: 18px;
+    background: var(--primary);
+    border: 4px solid #dbeafe;
+    border-radius: 50%;
+    content: "";
+}
+
+
+/* Arranges title and dates side by side */
+.resume-experience-heading {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* Company name */
+.resume-company {
+    margin-bottom: 5px;
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* Job title */
+.resume-experience-heading h3 {
+    color: var(--heading);
+    font-size: 1.45rem;
+}
+
+
+/* Employment dates */
+.resume-date {
+    color: var(--text);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* Short experience summary */
+.resume-experience-summary {
+    margin: 18px 0;
+    font-size: 1rem;
+}
+
+
+/* Experience bullet list */
+.resume-bullet-list {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+
+/* Individual experience bullet */
+.resume-bullet-list li {
+    position: relative;
+    padding-left: 24px;
+}
+
+
+/* Blue bullet marker */
+.resume-bullet-list li::before {
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    content: "•";
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+/* ----------------------------------------------------------
+   Education
+---------------------------------------------------------- */
+
+.resume-education-list {
+    display: grid;
+    gap: 16px;
+}
+
+
+/* Individual education row */
+.resume-education-item {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Degree name */
+.resume-education-item h3 {
+    margin-bottom: 5px;
+    color: var(--heading);
+    font-size: 1.2rem;
+}
+
+
+/* Graduation year */
+.resume-education-item > span {
+    color: var(--primary);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+
+/* ----------------------------------------------------------
+   Academic project
+---------------------------------------------------------- */
+
+.resume-academic-card {
+    padding: 34px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Academic project title */
+.resume-academic-card h3 {
+    max-width: 900px;
+    margin: 10px 0 14px;
+    color: var(--heading);
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+
+/* ----------------------------------------------------------
+   Certifications
+---------------------------------------------------------- */
+
+.resume-certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+/* Individual certification card */
+.resume-certification-card {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--border-radius);
+}
+
+
+/* Certification title */
+.resume-certification-card h3 {
+    margin-bottom: 8px;
+    color: var(--white);
+    font-size: 1.08rem;
+}
+
+
+/* Certification description */
+.resume-certification-card p {
+    color: var(--light-text);
+}
+
+
+/* ----------------------------------------------------------
+   Résumé download panel
+---------------------------------------------------------- */
+
+.resume-download-panel {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+}
+
+
+/* Limits the width of the text */
+.resume-download-panel > div:first-child {
+    max-width: 760px;
+}
+
+
+/* Download panel heading */
+.resume-download-panel h2 {
+    margin-bottom: 14px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Holds the download buttons */
+.resume-download-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: flex-end;
+}
 }
 @media (max-width: 960px) {
 
@@ -2082,9 +2538,70 @@ textarea {
 ================================== */
 
 @media (max-width: 640px) {
-       /* ======================================================
-       Skills page mobile layout
+
+  /* ======================================================
+       Résumé page mobile layout
     ====================================================== */
+
+    /* Reduce hero title size */
+    .resume-hero-layout h1 {
+        font-size: 2.6rem;
+    }
+
+    /* Stack all button groups */
+    .resume-hero-buttons,
+    .resume-download-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* Display one skill and certification card per row */
+    .resume-skill-grid,
+    .resume-certification-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stack experience heading and date */
+    .resume-experience-heading {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Allow date to wrap naturally */
+    .resume-date {
+        white-space: normal;
+    }
+
+    /* Reduce timeline spacing */
+    .resume-experience-item {
+        margin-left: 24px;
+        padding: 24px;
+    }
+
+    .resume-experience-item::before {
+        left: -25px;
+    }
+
+    .resume-timeline::before {
+        left: 7px;
+    }
+
+    /* Stack degree details and year */
+    .resume-education-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /* Reduce panel padding */
+    .resume-profile-card,
+    .resume-academic-card,
+    .resume-download-panel {
+        padding: 26px;
+    }
+   
+/* ======================================================
+       Skills page mobile layout
+ ====================================================== */
 
     /* Show one card per row */
     .core-skills-grid,
