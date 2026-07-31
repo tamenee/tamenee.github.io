@@ -1548,6 +1548,25 @@ textarea {
 }
 @media (max-width: 960px) {
 
+       /* ======================================================
+       Machine Learning tablet layout
+    ====================================================== */
+
+    /* Stack the introduction into one column */
+    .ml-intro-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Show two capability cards per row */
+    .ml-capability-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Show two tool cards per row */
+    .ml-tool-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 .analytics-intro-grid,
 .featured-project {
     grid-template-columns: 1fr;
@@ -1642,6 +1661,40 @@ textarea {
 ================================== */
 
 @media (max-width: 640px) {
+
+       /* ======================================================
+       Machine Learning mobile layout
+    ====================================================== */
+
+    /* Show one project per row */
+    .ml-project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Show one capability per row */
+    .ml-capability-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Show one tool per row */
+    .ml-tool-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduce project card padding */
+    .ml-project-body {
+        padding: 24px;
+    }
+
+    /* Reduce placeholder height on phones */
+    .ml-project-placeholder {
+        min-height: 220px;
+    }
+
+    /* Reduce placeholder title size */
+    .ml-project-placeholder h3 {
+        font-size: 1.7rem;
+    }
 
    .hero-stat-grid {
     flex-direction: column;
