@@ -1546,7 +1546,428 @@ textarea {
 .ml-tool-card p {
     color: var(--light-text);
 }
+
+/* ==========================================================
+   SKILLS PAGE
+   Controls the layout and appearance of skills.html.
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Skills page hero
+---------------------------------------------------------- */
+
+.skills-hero {
+    background:
+        radial-gradient(
+            circle at 84% 18%,
+            rgba(37, 99, 235, 0.17),
+            transparent 31%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+}
+
+
+/* ----------------------------------------------------------
+   Skills introduction
+---------------------------------------------------------- */
+
+.skills-intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 72px;
+    align-items: start;
+}
+
+
+/* Main heading inside the introduction */
+.skills-intro-grid h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Adds spacing between introduction paragraphs */
+.skills-intro-grid > div:first-child p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+
+/* Summary card on the right side */
+.skills-summary-card {
+    padding: 32px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+
+/* Main role title inside the summary card */
+.skills-summary-card h3 {
+    margin: 8px 0 12px;
+    color: var(--heading);
+    font-size: 1.8rem;
+}
+
+
+/* Horizontal divider between summary sections */
+.skills-summary-divider {
+    height: 1px;
+    margin: 26px 0;
+    background: var(--border);
+}
+
+
+/* ----------------------------------------------------------
+   Core analytics skills
+---------------------------------------------------------- */
+
+.core-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+
+/* Main card for SQL, Python, Excel and Power BI */
+.core-skill-card {
+    padding: 32px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+
+/* Number shown at the top of every core skill card */
+.core-skill-number {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    background: #eff6ff;
+    border-radius: 11px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+
+/* Core skill title */
+.core-skill-card h3 {
+    margin-bottom: 12px;
+    color: var(--heading);
+    font-size: 1.4rem;
+}
+
+
+/* Spacing below the skill summary */
+.core-skill-card > p {
+    margin-bottom: 22px;
+}
+
+
+/* Detailed list inside each core skill card */
+.skill-detail-list {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+
+/* Adds a blue check mark before every skill */
+.skill-detail-list li {
+    position: relative;
+    padding-left: 24px;
+    color: var(--heading);
+    font-size: 0.94rem;
+    font-weight: 600;
+}
+
+.skill-detail-list li::before {
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    content: "✓";
+    font-weight: 800;
+}
+
+
+/* ----------------------------------------------------------
+   Communication and visualisation
+---------------------------------------------------------- */
+
+.skill-feature-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 72px;
+    align-items: start;
+}
+
+
+/* Main heading in the communication section */
+.skill-feature-layout h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Paragraph spacing */
+.skill-feature-layout > div:first-child p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+
+/* Grid holding the four communication cards */
+.communication-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* Individual communication card */
+.communication-skill-card {
+    padding: 26px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Card number */
+.communication-skill-card > span {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+
+/* Card title */
+.communication-skill-card h3 {
+    margin-bottom: 10px;
+    color: var(--heading);
+}
+
+
+/* ----------------------------------------------------------
+   Machine Learning technical skills
+---------------------------------------------------------- */
+
+.technical-skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* Cards displayed inside the dark section */
+.technical-skill-card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: var(--border-radius);
+}
+
+
+/* Technical skill title */
+.technical-skill-card h3 {
+    margin-bottom: 12px;
+    color: var(--white);
+    font-size: 1.25rem;
+}
+
+
+/* Technical skill description */
+.technical-skill-card p {
+    color: var(--light-text);
+}
+
+
+/* ----------------------------------------------------------
+   Development workflow tools
+---------------------------------------------------------- */
+
+.workflow-tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* Main workflow tool card */
+.workflow-tool-card {
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+
+/* Workflow tool title */
+.workflow-tool-card h3 {
+    margin-bottom: 12px;
+    color: var(--heading);
+    font-size: 1.3rem;
+}
+
+
+/* Technology tags inside workflow cards */
+.skill-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+
+/* Individual small technology tag */
+.skill-tag-list span {
+    padding: 6px 10px;
+    background: #eff6ff;
+    border-radius: 999px;
+    color: var(--primary-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------
+   Supporting technical knowledge
+---------------------------------------------------------- */
+
+.supporting-skills-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 72px;
+    align-items: start;
+}
+
+
+/* Main heading in supporting-skills section */
+.supporting-skills-layout h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Paragraph spacing */
+.supporting-skills-layout > div:first-child p:not(.section-label) {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+
+/* Container for cloud, IT, networking and automation */
+.supporting-skills-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+}
+
+
+/* Individual supporting skill */
+.supporting-skills-card > div {
+    padding: 26px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Removes the right border from every second card */
+.supporting-skills-card > div:nth-child(2n) {
+    border-right: 0;
+}
+
+
+/* Removes the bottom border from the last row */
+.supporting-skills-card > div:nth-last-child(-n + 2) {
+    border-bottom: 0;
+}
+
+
+/* Supporting skill title */
+.supporting-skills-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--heading);
+}
+
+
+/* ----------------------------------------------------------
+   Skill development callout
+---------------------------------------------------------- */
+
+.skill-development-panel {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 42px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+}
+
+
+/* Restricts the width of the text area */
+.skill-development-panel > div {
+    max-width: 760px;
+}
+
+
+/* Skill development heading */
+.skill-development-panel h2 {
+    margin-bottom: 14px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
 @media (max-width: 960px) {
+
+       /* ======================================================
+       Skills page tablet layout
+    ====================================================== */
+
+    /* Stack the introductory content */
+    .skills-intro-grid,
+    .skill-feature-layout,
+    .supporting-skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Show two technical skill cards per row */
+    .technical-skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Stack the development panel */
+    .skill-development-panel {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
        /* ======================================================
        Machine Learning tablet layout
@@ -1661,6 +2082,50 @@ textarea {
 ================================== */
 
 @media (max-width: 640px) {
+       /* ======================================================
+       Skills page mobile layout
+    ====================================================== */
+
+    /* Show one card per row */
+    .core-skills-grid,
+    .communication-skill-grid,
+    .technical-skill-grid,
+    .workflow-tool-grid,
+    .supporting-skills-card {
+        grid-template-columns: 1fr;
+    }
+
+    /* Remove grid borders that no longer match one-column layout */
+    .supporting-skills-card > div {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    /* Keep only the final item without a bottom border */
+    .supporting-skills-card > div:nth-last-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .supporting-skills-card > div:last-child {
+        border-bottom: 0;
+    }
+
+    /* Reduce card padding on small screens */
+    .core-skill-card,
+    .workflow-tool-card,
+    .skills-summary-card {
+        padding: 24px;
+    }
+
+    /* Reduce the development panel padding */
+    .skill-development-panel {
+        padding: 28px;
+    }
+
+    /* Make the button fill the available width */
+    .skill-development-panel .button {
+        width: 100%;
+    }
 
        /* ======================================================
        Machine Learning mobile layout
