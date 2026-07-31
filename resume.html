@@ -1,1 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <!--
+        Defines the character encoding used by the webpage.
+        UTF-8 supports standard letters, punctuation and symbols.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Makes the page responsive on desktop computers,
+        tablets and mobile phones.
+    -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!--
+        Short description used by search engines
+        and website link previews.
+    -->
+    <meta
+        name="description"
+        content="Professional résumé for a Data Analyst and Computer Science graduate with experience in analytics, networking, IT infrastructure and technical support."
+    >
+
+    <!--
+        Text displayed in the browser tab.
+        Replace Your Name with your professional name.
+    -->
+    <title>
+        Resume | Tamene Dandena
+    </title>
+
+    <!--
+        Connects this page to the shared website stylesheet.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         WEBSITE HEADER
+         Uses the same navigation as all other portfolio pages.
+    ====================================================== -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <!--
+                Website logo or professional name.
+                Clicking it returns the visitor to the Home page.
+            -->
+            <a href="index.html" class="logo">
+                Tamene
+            </a>
+
+            <!--
+                Mobile navigation button.
+                The shared script.js file opens and closes the menu.
+            -->
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <!-- Main website navigation -->
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="analytics-projects.html">
+                        Analytics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="machine-learning.html">
+                        Machine Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <!--
+                        The active class highlights the current page.
+                    -->
+                    <a
+                        href="resume.html"
+                        class="active"
+                    >
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN PAGE CONTENT
+    ====================================================== -->
+    <main>
+
+        <!-- =================================================
+             PAGE HERO
+             Introduces the résumé page and provides actions.
+        ================================================== -->
+        <section class="page-hero resume-hero">
+
+            <div class="container resume-hero-layout">
+
+                <!-- Left side: professional introduction -->
+                <div>
+
+                    <p class="section-label">
+                        PROFESSIONAL RESUME
+                    </p>
+
+                    <h1>
+                        Data analytics supported by strong
+                        technical and infrastructure experience
+                    </h1>
+
+                    <p>
+                        Computer Science graduate with experience in
+                        networking, IT infrastructure, technical
+                        support, data analysis and machine learning.
+                        Currently focused on entry-level Data Analyst,
+                        Business Intelligence and Reporting
+                        opportunities in the United States.
+                    </p>
+
+
+                    <!-- Résumé action buttons -->
+                    <div class="resume-hero-buttons">
+
+                        <!--
+                            This opens the résumé PDF in a new browser tab.
+
+                            Place your résumé PDF at:
+                            assets/documents/resume.pdf
+                        -->
+                        <a
+                            href="assets/documents/resume.pdf"
+                            class="button button-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View PDF Resume
+                        </a>
+
+                        <!--
+                            The download attribute asks the browser
+                            to download the résumé instead of opening it.
+                        -->
+                        <a
+                            href="assets/documents/resume.pdf"
+                            class="button button-secondary"
+                            download
+                        >
+                            Download Resume
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Right side: quick professional profile -->
+                <aside class="resume-profile-card">
+
+                    <p class="section-label">
+                        PROFILE
+                    </p>
+
+                    <h2>
+                        Tamene
+                    </h2>
+
+                    <p class="resume-role">
+                        Data Analyst
+                    </p>
+
+                    <p>
+                        SQL · Python · Excel · Power BI ·
+                        Machine Learning · IT Infrastructure
+                    </p>
+
+                    <div class="resume-profile-details">
+
+                        <div>
+                            <span>
+                                Location
+                            </span>
+
+                            <strong>
+                                Maryland, USA
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Availability
+                            </span>
+
+                            <strong>
+                                Open to opportunities
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Work focus
+                            </span>
+
+                            <strong>
+                                Data and Business Analytics
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROFESSIONAL SUMMARY
+        ================================================== -->
+        <section class="section">
+
+            <div class="container resume-section-layout">
+
+                <!-- Section heading -->
+                <div class="resume-section-label">
+
+                    <p class="section-label">
+                        01
+                    </p>
+
+                    <h2>
+                        Professional Summary
+                    </h2>
+
+                </div>
+
+
+                <!-- Section content -->
+                <div class="resume-section-content">
+
+                    <p class="resume-summary-text">
+                        Computer Science graduate with a strong
+                        technical background in data analytics,
+                        networking, IT infrastructure, cloud
+                        technologies and technical support. Skilled in
+                        SQL, Python, Excel, Power BI and machine
+                        learning, with experience supporting complex
+                        technology environments and solving operational
+                        problems.
+                    </p>
+
+                    <p class="resume-summary-text">
+                        Able to combine analytical thinking with
+                        practical technical knowledge to clean data,
+                        identify trends, build dashboards and explain
+                        findings clearly to technical and non-technical
+                        stakeholders.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CORE SKILLS
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container resume-section-layout">
+
+                <div class="resume-section-label">
+
+                    <p class="section-label">
+                        02
+                    </p>
+
+                    <h2>
+                        Core Skills
+                    </h2>
+
+                </div>
+
+
+                <div class="resume-section-content">
+
+                    <!--
+                        Skills are grouped by professional function
+                        rather than displayed as percentage ratings.
+                    -->
+                    <div class="resume-skill-grid">
+
+                        <article class="resume-skill-group">
+
+                            <h3>
+                                Data Analytics
+                            </h3>
+
+                            <p>
+                                SQL, Excel, pandas, NumPy, data
+                                cleaning, exploratory analysis,
+                                statistics and business reporting
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-skill-group">
+
+                            <h3>
+                                Business Intelligence
+                            </h3>
+
+                            <p>
+                                Power BI, Tableau, KPI dashboards,
+                                Power Query, DAX fundamentals and data
+                                storytelling
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-skill-group">
+
+                            <h3>
+                                Machine Learning
+                            </h3>
+
+                            <p>
+                                scikit-learn, TensorFlow, PyTorch,
+                                classification, regression, NLP and
+                                model evaluation
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-skill-group">
+
+                            <h3>
+                                Programming
+                            </h3>
+
+                            <p>
+                                Python, PowerShell, Bash, SQL, Git,
+                                GitHub, Jupyter Notebook, HTML and CSS
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-skill-group">
+
+                            <h3>
+                                Cloud and Infrastructure
+                            </h3>
+
+                            <p>
+                                AWS, Microsoft 365, Active Directory,
+                                Intune, VMware, Windows, Linux and macOS
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-skill-group">
+
+                            <h3>
+                                Networking
+                            </h3>
+
+                            <p>
+                                Cisco routing and switching, VLANs,
+                                DNS, DHCP, VPN, wireless, firewalls and
+                                network monitoring
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROFESSIONAL EXPERIENCE
+             Uses only your preferred three experience categories.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container resume-section-layout">
+
+                <div class="resume-section-label">
+
+                    <p class="section-label">
+                        03
+                    </p>
+
+                    <h2>
+                        Professional Experience
+                    </h2>
+
+                </div>
+
+
+                <div class="resume-section-content">
+
+                    <div class="resume-timeline">
+
+                        <!-- =================================
+                             EXPERIENCE 1
+                        ================================== -->
+                        <article class="resume-experience-item">
+
+                            <div class="resume-experience-heading">
+
+                                <div>
+
+                                    <p class="resume-company">
+                                        TXP Technology
+                                    </p>
+
+                                    <h3>
+                                        Network Engineer
+                                    </h3>
+
+                                </div>
+
+                                <!--
+                                    Update the dates to match
+                                    the final version of your résumé.
+                                -->
+                                <p class="resume-date">
+                                    2020 – Present
+                                </p>
+
+                            </div>
+
+
+                            <p class="resume-experience-summary">
+                                Delivered network and infrastructure
+                                support across commercial technology
+                                environments, including site surveys,
+                                deployment planning, troubleshooting and
+                                technical documentation.
+                            </p>
+
+
+                            <ul class="resume-bullet-list">
+
+                                <li>
+                                    Conducted LAN, WAN and wireless site
+                                    surveys for commercial environments.
+                                </li>
+
+                                <li>
+                                    Supported network installation,
+                                    cabling, hardware placement and
+                                    connectivity planning.
+                                </li>
+
+                                <li>
+                                    Troubleshot network, wireless,
+                                    endpoint and infrastructure issues.
+                                </li>
+
+                                <li>
+                                    Produced technical documentation,
+                                    survey reports and implementation
+                                    recommendations.
+                                </li>
+
+                                <li>
+                                    Coordinated with customers,
+                                    contractors and project teams during
+                                    technical deployments.
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+
+                        <!-- =================================
+                             EXPERIENCE 2
+                        ================================== -->
+                        <article class="resume-experience-item">
+
+                            <div class="resume-experience-heading">
+
+                                <div>
+
+                                    <p class="resume-company">
+                                        Computacenter
+                                    </p>
+
+                                    <h3>
+                                        IT Infrastructure / Network Engineer
+                                    </h3>
+
+                                </div>
+
+                                <p class="resume-date">
+                                    2013 – 2019
+                                </p>
+
+                            </div>
+
+
+                            <p class="resume-experience-summary">
+                                Supported enterprise infrastructure,
+                                networking, end-user systems and
+                                technical service environments for
+                                business customers.
+                            </p>
+
+
+                            <ul class="resume-bullet-list">
+
+                                <li>
+                                    Supported Windows, Linux, macOS,
+                                    Microsoft 365 and enterprise
+                                    endpoint environments.
+                                </li>
+
+                                <li>
+                                    Assisted with wired and wireless
+                                    network deployment, troubleshooting
+                                    and infrastructure support.
+                                </li>
+
+                                <li>
+                                    Supported user accounts, access,
+                                    hardware, software and technical
+                                    incidents.
+                                </li>
+
+                                <li>
+                                    Worked with ticketing, monitoring,
+                                    virtualisation and cloud-related
+                                    platforms.
+                                </li>
+
+                                <li>
+                                    Communicated technical issues and
+                                    resolutions clearly to users and
+                                    project stakeholders.
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+
+                        <!-- =================================
+                             EXPERIENCE 3
+                        ================================== -->
+                        <article class="resume-experience-item">
+
+                            <div class="resume-experience-heading">
+
+                                <div>
+
+                                    <p class="resume-company">
+                                        Jimma University
+                                    </p>
+
+                                    <h3>
+                                        Network Administrator
+                                    </h3>
+
+                                </div>
+
+                                <p class="resume-date">
+                                    2008 – 2013
+                                </p>
+
+                            </div>
+
+
+                            <p class="resume-experience-summary">
+                                Managed and supported campus networking,
+                                wireless services, user connectivity and
+                                infrastructure operations in a large
+                                university environment.
+                            </p>
+
+
+                            <ul class="resume-bullet-list">
+
+                                <li>
+                                    Administered campus wired and
+                                    wireless networks using Cisco
+                                    switching, routing and wireless
+                                    technologies.
+                                </li>
+
+                                <li>
+                                    Supported RADIUS authentication,
+                                    wireless controllers, VLANs, DNS and
+                                    DHCP services.
+                                </li>
+
+                                <li>
+                                    Participated in network design,
+                                    expansion, implementation and
+                                    performance monitoring.
+                                </li>
+
+                                <li>
+                                    Supervised cabling work, equipment
+                                    installation and infrastructure
+                                    improvements.
+                                </li>
+
+                                <li>
+                                    Provided technical support,
+                                    documentation and guidance to users
+                                    and technical staff.
+                                </li>
+
+                            </ul>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EDUCATION
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container resume-section-layout">
+
+                <div class="resume-section-label">
+
+                    <p class="section-label">
+                        04
+                    </p>
+
+                    <h2>
+                        Education
+                    </h2>
+
+                </div>
+
+
+                <div class="resume-section-content">
+
+                    <div class="resume-education-list">
+
+                        <!-- Master's degree -->
+                        <article class="resume-education-item">
+
+                            <div>
+
+                                <h3>
+                                    MSc Advanced Computer Science
+                                </h3>
+
+                                <p>
+                                    University of Strathclyde
+                                </p>
+
+                            </div>
+
+                            <span>
+                                2024
+                            </span>
+
+                        </article>
+
+
+                        <!-- Bachelor's degree -->
+                        <article class="resume-education-item">
+
+                            <div>
+
+                                <h3>
+                                    BEng Networked Systems Engineering
+                                </h3>
+
+                                <p>
+                                    Glasgow Caledonian University
+                                </p>
+
+                            </div>
+
+                            <span>
+                                2015
+                            </span>
+
+                        </article>
+
+
+                        <!-- Earlier degree -->
+                        <article class="resume-education-item">
+
+                            <div>
+
+                                <h3>
+                                    BSc Computer Engineering
+                                </h3>
+
+                                <p>
+                                    MicroLink Information Technology College
+                                </p>
+
+                            </div>
+
+                            <span>
+                                2007
+                            </span>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SELECTED ACADEMIC FOCUS
+        ================================================== -->
+        <section class="section">
+
+            <div class="container resume-section-layout">
+
+                <div class="resume-section-label">
+
+                    <p class="section-label">
+                        05
+                    </p>
+
+                    <h2>
+                        Academic Focus
+                    </h2>
+
+                </div>
+
+
+                <div class="resume-section-content">
+
+                    <div class="resume-academic-card">
+
+                        <p class="project-category">
+                            MASTER'S DISSERTATION
+                        </p>
+
+                        <h3>
+                            Neural Networks for Natural Language
+                            Processing and Programming Language
+                            Processing
+                        </h3>
+
+                        <p>
+                            Explored neural-network and deep-learning
+                            techniques for translation between English
+                            language descriptions and Python code.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Deep Learning</span>
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CERTIFICATIONS AND TRAINING
+        ================================================== -->
+        <section class="section section-dark">
+
+            <div class="container resume-section-layout">
+
+                <div class="resume-section-label resume-section-label-light">
+
+                    <p class="section-label">
+                        06
+                    </p>
+
+                    <h2>
+                        Certifications and Training
+                    </h2>
+
+                </div>
+
+
+                <div class="resume-section-content">
+
+                    <!--
+                        This is a selected list.
+                        The full PDF resume can contain additional items.
+                    -->
+                    <div class="resume-certification-grid">
+
+                        <article class="resume-certification-card">
+
+                            <h3>
+                                AWS Certified Solutions Architect
+                            </h3>
+
+                            <p>
+                                Amazon Web Services
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-certification-card">
+
+                            <h3>
+                                Cisco CCNA
+                            </h3>
+
+                            <p>
+                                Cisco networking training
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-certification-card">
+
+                            <h3>
+                                F5 Networks Technical Training
+                            </h3>
+
+                            <p>
+                                Load balancing and application delivery
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-certification-card">
+
+                            <h3>
+                                Endpoint Configuration Management
+                            </h3>
+
+                            <p>
+                                Microsoft SCCM and endpoint support
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-certification-card">
+
+                            <h3>
+                                Data Science Training
+                            </h3>
+
+                            <p>
+                                Data analysis and machine-learning
+                                foundations
+                            </p>
+
+                        </article>
+
+
+                        <article class="resume-certification-card">
+
+                            <h3>
+                                Python Training
+                            </h3>
+
+                            <p>
+                                Programming and data-analysis
+                                fundamentals
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             RESUME DOWNLOAD PANEL
+        ================================================== -->
+        <section class="section">
+
+            <div class="container resume-download-panel">
+
+                <div>
+
+                    <p class="section-label">
+                        FULL RESUME
+                    </p>
+
+                    <h2>
+                        View the complete PDF resume
+                    </h2>
+
+                    <p>
+                        The PDF version contains the final employment
+                        dates, detailed achievements, contact
+                        information and additional technical
+                        experience.
+                    </p>
+
+                </div>
+
+
+                <div class="resume-download-actions">
+
+                    <a
+                        href="assets/documents/resume.pdf"
+                        class="button button-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Open PDF Resume
+                    </a>
+
+                    <a
+                        href="assets/documents/resume.pdf"
+                        class="button button-secondary"
+                        download
+                    >
+                        Download PDF
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT CALL-TO-ACTION
+        ================================================== -->
+        <section class="section contact-cta">
+
+            <div class="container contact-cta-content">
+
+                <div>
+
+                    <p class="section-label">
+                        LET'S CONNECT
+                    </p>
+
+                    <h2>
+                        Interested in discussing an opportunity?
+                    </h2>
+
+                    <p>
+                        I am open to Data Analyst, Business
+                        Intelligence, Reporting, IT Analytics and
+                        technical infrastructure opportunities in the
+                        United States.
+                    </p>
+
+                </div>
+
+                <a
+                    href="contact.html"
+                    class="button button-primary"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         WEBSITE FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="current-year"></span>
+                Tamene Dandena. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <!-- Replace YOUR-USERNAME with your GitHub username. -->
+                <a
+                    href="https://github.com/tamenee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <!-- Replace YOUR-LINKEDIN-URL. -->
+                <a
+                    href="https://www.linkedin.com/in/tamene-dandena"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!--
+        Loads the shared JavaScript used for the mobile menu
+        and automatic footer year.
+    -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
