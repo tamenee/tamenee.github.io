@@ -1,1 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <!--
+        Defines the character encoding used by the page.
+        UTF-8 supports standard text and common symbols.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        Makes the page responsive on desktop computers,
+        tablets and mobile phones.
+    -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!--
+        Short page description used by search engines
+        and social-media link previews.
+    -->
+    <meta
+        name="description"
+        content="Machine learning portfolio featuring predictive analytics, classification, natural language processing and model evaluation projects."
+    >
+
+    <!--
+        Text displayed in the browser tab.
+        Replace Your Name with your professional name.
+    -->
+    <title>
+        Machine Learning Projects | Your Name
+    </title>
+
+    <!--
+        Connects this page to the shared website stylesheet.
+    -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         WEBSITE HEADER
+         Uses the same navigation as the other portfolio pages.
+    ====================================================== -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <!--
+                Website name or logo.
+                Clicking it returns the visitor to the Home page.
+            -->
+            <a href="index.html" class="logo">
+                Tamene Dandena
+            </a>
+
+            <!--
+                Mobile navigation button.
+                The shared script.js file opens and closes the menu.
+            -->
+            <button
+                class="menu-button"
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <!-- Main website navigation -->
+            <ul class="nav-links" id="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="analytics-projects.html">
+                        Analytics
+                    </a>
+                </li>
+
+                <li>
+                    <!--
+                        The active class highlights this page
+                        in the navigation menu.
+                    -->
+                    <a
+                        href="machine-learning.html"
+                        class="active"
+                    >
+                        Machine Learning
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html">
+                        Resume
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN PAGE CONTENT
+    ====================================================== -->
+    <main>
+
+        <!-- =================================================
+             PAGE HERO
+             Introduces the Machine Learning portfolio section.
+        ================================================== -->
+        <section class="page-hero machine-learning-hero">
+
+            <div class="container">
+
+                <p class="section-label">
+                    MACHINE LEARNING
+                </p>
+
+                <h1>
+                    Using data to predict outcomes and recognise patterns
+                </h1>
+
+                <p>
+                    This section presents planned machine-learning
+                    projects involving classification, predictive
+                    analytics, natural language processing and model
+                    evaluation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MACHINE LEARNING INTRODUCTION
+             Provides a short explanation of your approach.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container ml-intro-grid">
+
+                <!-- Left side: professional explanation -->
+                <div>
+
+                    <p class="section-label">
+                        PORTFOLIO FOCUS
+                    </p>
+
+                    <h2>
+                        Extending business analytics with prediction
+                    </h2>
+
+                    <p>
+                        Machine learning can help organisations move
+                        beyond understanding what has already happened
+                        and begin estimating what may happen next.
+                    </p>
+
+                    <p>
+                        My planned projects will demonstrate the process
+                        of preparing data, selecting models, evaluating
+                        results and explaining how predictions can
+                        support business decisions.
+                    </p>
+
+                    <p>
+                        Detailed datasets, notebooks, model results and
+                        technical case studies will be added after the
+                        full portfolio website has been completed.
+                    </p>
+
+                </div>
+
+
+                <!-- Right side: simple model-development workflow -->
+                <aside class="ml-process-card">
+
+                    <h3>
+                        Machine-learning workflow
+                    </h3>
+
+                    <ol class="ml-process-list">
+
+                        <li>
+                            <span>01</span>
+
+                            <div>
+                                <strong>
+                                    Define
+                                </strong>
+
+                                <p>
+                                    Identify the prediction problem.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span>02</span>
+
+                            <div>
+                                <strong>
+                                    Prepare
+                                </strong>
+
+                                <p>
+                                    Clean and transform the dataset.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span>03</span>
+
+                            <div>
+                                <strong>
+                                    Train
+                                </strong>
+
+                                <p>
+                                    Build and compare suitable models.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span>04</span>
+
+                            <div>
+                                <strong>
+                                    Evaluate
+                                </strong>
+
+                                <p>
+                                    Measure performance and limitations.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ol>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MACHINE LEARNING PROJECT PREVIEWS
+             These are previews only. They are not links to
+             unfinished case-study pages.
+        ================================================== -->
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        PROJECT PREVIEWS
+                    </p>
+
+                    <h2>
+                        Selected machine-learning projects
+                    </h2>
+
+                    <p>
+                        These projects are currently represented by
+                        preview content. Full technical documentation
+                        will be added later.
+                    </p>
+
+                </div>
+
+
+                <div class="ml-project-grid">
+
+                    <!-- =====================================
+                         PROJECT 1
+                         Customer Churn Prediction
+                    ====================================== -->
+                    <article class="ml-project-card">
+
+                        <div class="ml-project-image">
+
+                            <!--
+                                Existing placeholder image:
+                                assets/images/churn-model.png
+                            -->
+                            <img
+                                src="assets/images/churn-model.png"
+                                alt="Customer churn prediction project preview"
+                            >
+
+                        </div>
+
+
+                        <div class="ml-project-body">
+
+                            <p class="project-category">
+                                PREDICTIVE ANALYTICS
+                            </p>
+
+                            <h3>
+                                Customer Churn Prediction
+                            </h3>
+
+                            <p>
+                                A classification project designed to
+                                identify customers who may be at risk
+                                of leaving a service or cancelling a
+                                subscription.
+                            </p>
+
+                            <!-- Planned technologies -->
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>pandas</span>
+                                <span>scikit-learn</span>
+                            </div>
+
+                            <!--
+                                Plain text is used instead of a link
+                                because the detailed project is not ready.
+                            -->
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         PROJECT 2
+                         Sales Forecasting
+                    ====================================== -->
+                    <article class="ml-project-card">
+
+                        <!--
+                            Designed placeholder used until a final
+                            project image is created.
+                        -->
+                        <div class="ml-project-placeholder">
+
+                            <div>
+
+                                <span>
+                                    FORECASTING
+                                </span>
+
+                                <h3>
+                                    Sales Forecasting
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ml-project-body">
+
+                            <p class="project-category">
+                                TIME-SERIES ANALYSIS
+                            </p>
+
+                            <h3>
+                                Sales and Demand Forecasting
+                            </h3>
+
+                            <p>
+                                A project designed to estimate future
+                                sales or product demand using historical
+                                patterns, seasonality and trend data.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Time Series</span>
+                                <span>Forecasting</span>
+                            </div>
+
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         PROJECT 3
+                         Text Classification
+                    ====================================== -->
+                    <article class="ml-project-card">
+
+                        <div class="ml-project-placeholder">
+
+                            <div>
+
+                                <span>
+                                    NLP
+                                </span>
+
+                                <h3>
+                                    Text Classification
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ml-project-body">
+
+                            <p class="project-category">
+                                NATURAL LANGUAGE PROCESSING
+                            </p>
+
+                            <h3>
+                                Support Ticket Classification
+                            </h3>
+
+                            <p>
+                                A natural-language-processing project
+                                designed to classify support requests
+                                into categories for faster routing and
+                                reporting.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>Classification</span>
+                            </div>
+
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =====================================
+                         PROJECT 4
+                         Recommendation System
+                    ====================================== -->
+                    <article class="ml-project-card">
+
+                        <div class="ml-project-placeholder">
+
+                            <div>
+
+                                <span>
+                                    PERSONALISATION
+                                </span>
+
+                                <h3>
+                                    Recommendation System
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="ml-project-body">
+
+                            <p class="project-category">
+                                RECOMMENDER SYSTEMS
+                            </p>
+
+                            <h3>
+                                Product Recommendation Model
+                            </h3>
+
+                            <p>
+                                A planned project exploring how customer
+                                behaviour and product interactions can
+                                be used to generate personalised
+                                recommendations.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Recommendation</span>
+                            </div>
+
+                            <p class="project-preview-note">
+                                Detailed project coming later
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MACHINE LEARNING CAPABILITIES
+             Summarises the main areas you are developing.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        TECHNICAL AREAS
+                    </p>
+
+                    <h2>
+                        Machine-learning capabilities
+                    </h2>
+
+                    <p>
+                        These areas represent the techniques and skills
+                        that will be demonstrated across the completed
+                        projects.
+                    </p>
+
+                </div>
+
+
+                <div class="ml-capability-grid">
+
+                    <!-- Classification -->
+                    <article class="ml-capability-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Classification
+                        </h3>
+
+                        <p>
+                            Predicting categories such as churn,
+                            ticket type, customer risk or sentiment.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Regression -->
+                    <article class="ml-capability-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Regression
+                        </h3>
+
+                        <p>
+                            Estimating continuous values such as sales,
+                            demand, cost or customer value.
+                        </p>
+
+                    </article>
+
+
+                    <!-- NLP -->
+                    <article class="ml-capability-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Natural Language Processing
+                        </h3>
+
+                        <p>
+                            Analysing written text for classification,
+                            information extraction and automation.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Evaluation -->
+                    <article class="ml-capability-card">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h3>
+                            Model Evaluation
+                        </h3>
+
+                        <p>
+                            Comparing models using suitable metrics,
+                            validation methods and business trade-offs.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MACHINE LEARNING TOOLKIT
+        ================================================== -->
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading section-heading-light">
+
+                    <p class="section-label">
+                        MACHINE LEARNING TOOLKIT
+                    </p>
+
+                    <h2>
+                        Technologies used for modelling
+                    </h2>
+
+                    <p>
+                        The exact tools will depend on the project,
+                        dataset and type of prediction being developed.
+                    </p>
+
+                </div>
+
+
+                <div class="ml-tool-grid">
+
+                    <!-- Python -->
+                    <article class="ml-tool-card">
+
+                        <span class="tool-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Python
+                        </h3>
+
+                        <p>
+                            Used for data preparation, modelling,
+                            evaluation and automation.
+                        </p>
+
+                    </article>
+
+
+                    <!-- pandas -->
+                    <article class="ml-tool-card">
+
+                        <span class="tool-number">
+                            02
+                        </span>
+
+                        <h3>
+                            pandas and NumPy
+                        </h3>
+
+                        <p>
+                            Used to clean, transform and organise data
+                            before model training.
+                        </p>
+
+                    </article>
+
+
+                    <!-- scikit-learn -->
+                    <article class="ml-tool-card">
+
+                        <span class="tool-number">
+                            03
+                        </span>
+
+                        <h3>
+                            scikit-learn
+                        </h3>
+
+                        <p>
+                            Used for preprocessing, model training,
+                            validation and performance comparison.
+                        </p>
+
+                    </article>
+
+
+                    <!-- TensorFlow / PyTorch -->
+                    <article class="ml-tool-card">
+
+                        <span class="tool-number">
+                            04
+                        </span>
+
+                        <h3>
+                            TensorFlow and PyTorch
+                        </h3>
+
+                        <p>
+                            Used for deep-learning and advanced
+                            natural-language-processing experiments.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONNECTION TO BUSINESS ANALYTICS
+             Explains how ML complements Data Analyst skills.
+        ================================================== -->
+        <section class="section">
+
+            <div class="container project-two-column">
+
+                <div>
+
+                    <p class="section-label">
+                        BUSINESS CONNECTION
+                    </p>
+
+                    <h2>
+                        Machine learning should support a clear decision
+                    </h2>
+
+                    <p>
+                        A model is valuable when its predictions help
+                        an organisation take a useful action.
+                    </p>
+
+                    <p>
+                        My project approach therefore connects model
+                        performance with business questions, practical
+                        limitations and understandable recommendations.
+                    </p>
+
+                </div>
+
+
+                <aside class="business-problem-card">
+
+                    <h3>
+                        Start with business analytics
+                    </h3>
+
+                    <p>
+                        Review the business analytics projects covering
+                        sales, customers and operational performance.
+                    </p>
+
+                    <a
+                        href="analytics-projects.html"
+                        class="project-link"
+                    >
+                        View Analytics Projects →
+                    </a>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT CALL-TO-ACTION
+        ================================================== -->
+        <section class="section contact-cta">
+
+            <div class="container contact-cta-content">
+
+                <div>
+
+                    <p class="section-label">
+                        OPEN TO OPPORTUNITIES
+                    </p>
+
+                    <h2>
+                        Interested in data analytics or junior
+                        machine-learning talent?
+                    </h2>
+
+                    <p>
+                        I am interested in entry-level Data Analyst,
+                        Business Intelligence, Junior Data Science and
+                        analytics opportunities in the United States.
+                    </p>
+
+                </div>
+
+                <a
+                    href="contact.html"
+                    class="button button-primary"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         WEBSITE FOOTER
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="current-year"></span>
+                Tamene Dandena. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+
+                <!-- Replace YOUR-USERNAME with your GitHub username. -->
+                <a
+                    href="https://github.com/tamenee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <!-- Replace YOUR-LINKEDIN-URL. -->
+                <a
+                    href="https://www.linkedin.com/in/tamene-dandena"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!--
+        Loads the shared JavaScript used for the mobile menu
+        and automatic footer year.
+    -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
