@@ -2401,6 +2401,416 @@ textarea {
     justify-content: flex-end;
 }
 }
+
+/* ==========================================================
+   CONTACT PAGE
+   Controls the layout and appearance of contact.html.
+========================================================== */
+
+
+/* ----------------------------------------------------------
+   Contact hero
+---------------------------------------------------------- */
+
+.contact-hero {
+    background:
+        radial-gradient(
+            circle at 84% 18%,
+            rgba(37, 99, 235, 0.17),
+            transparent 31%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fafc 100%
+        );
+}
+
+
+/* Creates two columns inside the Contact hero */
+.contact-hero-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 72px;
+    align-items: center;
+}
+
+
+/* Main Contact heading */
+.contact-hero-layout h1 {
+    max-width: 900px;
+    margin-bottom: 24px;
+    color: var(--heading);
+    font-size: clamp(2.7rem, 6vw, 4.8rem);
+    line-height: 1.07;
+    letter-spacing: -0.04em;
+}
+
+
+/* Paragraph spacing inside the Contact hero */
+.contact-hero-layout > div:first-child > p:not(.section-label) {
+    max-width: 800px;
+    margin-bottom: 16px;
+    font-size: 1.08rem;
+}
+
+
+/* ----------------------------------------------------------
+   Availability card
+---------------------------------------------------------- */
+
+.contact-availability-card {
+    padding: 34px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: var(--shadow-large);
+}
+
+
+/* Availability heading */
+.contact-availability-card h2 {
+    margin: 8px 0 22px;
+    color: var(--heading);
+    font-size: 1.8rem;
+}
+
+
+/* Holds availability rows */
+.contact-availability-list {
+    display: grid;
+}
+
+
+/* Individual availability row */
+.contact-availability-list > div {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+
+/* Removes the final border */
+.contact-availability-list > div:last-child {
+    border-bottom: 0;
+}
+
+
+/* Availability label */
+.contact-availability-list span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* Availability value */
+.contact-availability-list strong {
+    color: var(--heading);
+}
+
+
+/* ----------------------------------------------------------
+   Contact method cards
+---------------------------------------------------------- */
+
+.contact-method-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+/* Individual contact method card */
+.contact-method-card {
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-small);
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Lifts the card slightly when hovered */
+.contact-method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-large);
+}
+
+
+/* Symbol displayed at the top of each contact card */
+.contact-method-icon {
+    display: flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    background: #eff6ff;
+    border-radius: 13px;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+/* Contact card title */
+.contact-method-card h3 {
+    margin: 8px 0 12px;
+    color: var(--heading);
+    font-size: 1.3rem;
+}
+
+
+/* ----------------------------------------------------------
+   Contact form layout
+---------------------------------------------------------- */
+
+.contact-form-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 72px;
+    align-items: start;
+}
+
+
+/* Contact form section heading */
+.contact-form-introduction h2 {
+    margin-bottom: 22px;
+    color: var(--heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Paragraph spacing */
+.contact-form-introduction > p:not(.section-label) {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+
+/* Helpful information box */
+.contact-guidance-card {
+    margin-top: 30px;
+    padding: 26px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Guidance heading */
+.contact-guidance-card h3 {
+    margin-bottom: 16px;
+    color: var(--heading);
+}
+
+
+/* Guidance list */
+.contact-guidance-card ul {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+
+/* Guidance list item */
+.contact-guidance-card li {
+    position: relative;
+    padding-left: 24px;
+}
+
+
+/* Blue check mark */
+.contact-guidance-card li::before {
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    content: "✓";
+    font-weight: 800;
+}
+
+
+/* Main contact form */
+.contact-form {
+    padding: 34px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow-small);
+}
+
+
+/* Groups each label and form field */
+.form-group {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* Form field labels */
+.form-group label {
+    color: var(--heading);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+
+/* Shared input, select and textarea styles */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--heading);
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* Prevents manual horizontal resizing */
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+/* Changes field border when selected */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* Submit button */
+.contact-submit-button {
+    width: 100%;
+}
+
+
+/* Status message below the button */
+.form-status {
+    min-height: 24px;
+    margin-top: 14px;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------
+   Contact role cards
+---------------------------------------------------------- */
+
+.contact-role-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* Individual role card */
+.contact-role-card {
+    padding: 28px;
+    background: var(--background-light);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+
+/* Role number */
+.contact-role-card > span {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+
+/* Role title */
+.contact-role-card h3 {
+    margin-bottom: 12px;
+    color: var(--heading);
+}
+
+
+/* ----------------------------------------------------------
+   Quick links dark section
+---------------------------------------------------------- */
+
+.contact-quick-links-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 72px;
+    align-items: start;
+}
+
+
+/* Quick links section heading */
+.contact-quick-links-layout h2 {
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+
+/* Quick links section paragraph */
+.contact-quick-links-layout > div:first-child > p:last-child {
+    color: var(--light-text);
+}
+
+
+/* Holds the portfolio quick links */
+.contact-quick-links {
+    display: grid;
+    gap: 14px;
+}
+
+
+/* Individual quick link */
+.contact-quick-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 22px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    color: var(--white);
+    font-weight: 700;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Quick link hover effect */
+.contact-quick-links a:hover {
+    transform: translateX(4px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Arrow displayed on the right */
+.contact-quick-links a span {
+    color: #60a5fa;
+}
 @media (max-width: 960px) {
 
        /* ======================================================
